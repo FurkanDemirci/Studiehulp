@@ -11,7 +11,7 @@
         <h5 class="header col s12 light"></h5>
       </div>
       <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Beginnen!</a>
       </div>
       <br><br>
 

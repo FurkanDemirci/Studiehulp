@@ -4,7 +4,7 @@
  * the core Materialize files in the future
  *
  * Made By MaterializeCSS.com
- */
+ */      
 
 .icon-block {
   padding: 0 15px;
@@ -17,4 +17,10 @@
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+
+/* Login en registratie divs bijde een uiterlijk geven */
+#loginform {
+	/* Nog niks, misschien in de toekomst */
 }
