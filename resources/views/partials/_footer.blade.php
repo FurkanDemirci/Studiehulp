@@ -13,13 +13,15 @@
     <div class="col l3 s12">
       <h5 class="white-text">Settings</h5>
       <ul>
-        <li><a class="white-text" href="#!">Link 1</a></li>
+        <li><a class="white-text" href="#!">Test1</a></li>
+        <li><a class="white-text" href="#!">Test2</a></li>
+        <li><a class="white-text" href="#!">Test3</a></li>
       </ul>
     </div>
     <div class="col l3 s12">
       <h5 class="white-text">Connect</h5>
       <ul>
-        <li><a class="white-text" href="#!">Link 1</a></li>
+        <li><a class="white-text" href="#">ROC Ter AA</a></li>
       </ul>
     </div>
   </div>
