@@ -2,3 +2,4 @@
 <script src="{{ URL::asset('js/app.js') }}"></script>
 <script src="{{ URL::asset('js/materialize.js') }}"></script>
 <script src="{{ URL::asset('js/init.js') }}"></script>
+<script src="{{ URL::asset('dist/sweetalert.min.js') }}"></script>

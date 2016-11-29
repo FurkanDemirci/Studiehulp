@@ -67,9 +67,15 @@
         	</div>
       	</div>
       	<div class="row right">
-        	<button class="btn waves-effect waves-light red darken-4" type="submit">Registreren
+        	<button class="btn waves-effect waves-light red darken-4" onclick="test();" type="submit">Registreren
     		<i class="material-icons right">send</i>
   			</button>
+
+  			<script type="text/javascript">
+  				function test() {
+  					swal("Good job!", "You clicked the button!", "success");
+  				}
+  			</script>
   		</div>
 	</form>
 </div>
