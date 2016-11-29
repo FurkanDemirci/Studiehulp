@@ -14,7 +14,6 @@
         <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Beginnen!</a>
       </div>
       <br><br>
-
     </div>
   </div>
 @stop
