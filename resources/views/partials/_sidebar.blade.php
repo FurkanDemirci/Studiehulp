@@ -3,7 +3,8 @@
   <div class="nav-wrapper container"><a id="logo-container" href="{{ URL::route ('home') }}" class="brand-logo"><b>ROC Ter AA</b> <i>studiehulp</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="{{ URL::route ('home') }}">Home</a></li>
-      <li><a href="#">Test</a></li>
+      <li><a href="{{ URL::route ('student') }}">Test1</a></li>
+      <li><a href="{{ URL::route ('begeleider') }}">Test2</a></li>
       <li><a class="red darken-4 waves-effect waves-light btn" href="{{ URL::route('login') }}">Login</a></li>
     </ul>
 

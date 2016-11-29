@@ -13,3 +13,5 @@
 
 Route::get('/home', 'HomeController@getHome')->name('home');
 Route::get('/login', 'HomeController@getLogin')->name('login');
+Route::get('/student', 'HomeController@getStudent')->name('student');
+Route::get('/begeleider', 'HomeController@getBegeleider')->name('begeleider');
