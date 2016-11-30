@@ -33,6 +33,7 @@
 			<tr>
 				<th>Volledige naam</th>
 				<th>Email</th>
+				<th>Open</th>
 			</tr>
 		</thead>
 
@@ -57,6 +58,31 @@
 	</table>	
 </div>
 
+	<!-- Modal Structure -->
+<div id="modal" class="modal">
+	<div class="modal-content">
+		<div class="row center">
+			<h4>Voornaam Achternaam</h4>
+			<p>Gegevens</p>
+		</div>
+		<div class="row">
+			<div class="col s6">
+				<blockquote>
+      				Test:
+    			</blockquote>
+			</div>
+			<div class="col s6">
+				
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div>
+</div>
+
+	<!-- JavaScript en Jquery -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 function searchFunction() {
 	var input, filter, table, tr, td, i;
@@ -76,6 +102,12 @@ function searchFunction() {
 		} 
 	}
 }
+
+ $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+
 </script>
 
 @stop
