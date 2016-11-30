@@ -6,9 +6,9 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     	<div class="row center">
-      		<br><br>
+      		<br>
       			<h4 class="header center black-text">Begeleider</h4>
-      		<br><br>
+      		<br>
     	</div>
     </div>
   </div>
