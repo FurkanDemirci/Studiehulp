@@ -28,6 +28,7 @@
 </nav>
 </div>
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
   $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
