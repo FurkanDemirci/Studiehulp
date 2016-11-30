@@ -5,7 +5,7 @@
       <li><a href="{{ URL::route ('home') }}">Home</a></li>
       <li><a href="{{ URL::route ('student') }}">Test1</a></li>
       <li><a href="{{ URL::route ('begeleider') }}">Test2</a></li>
-      <li><a class="red darken-4 waves-effect waves-light btn" href="{{ URL::route('login') }}">Login</a></li>
+      <li><a class="teal darken-1  waves-effect waves-light btn" href="{{ URL::route('login') }}">Login</a></li>
     </ul>
 
   <ul id="nav-mobile" class="side-nav">
