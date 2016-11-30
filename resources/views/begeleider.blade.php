@@ -41,18 +41,22 @@
 			<tr>
 				<td>Furkan Demirci</td>
 				<td>furkan.demirci@live.nl</td>
+				<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger" href="#modal"><i class="material-icons">toc</i></a></td>
 			</tr>
 			<tr>
 				<td>Yaime van der Vleuten</td>
 				<td>yaimevdv@hotmail.com</td>
+				<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger" href="#modal"><i class="material-icons">toc</i></a></td>
 			</tr>
 			<tr>
 				<td>Davey Cornelissen</td>
 				<td>d.cornilissen8@gmail.com</td>
+				<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger" href="#modal"><i class="material-icons">toc</i></a></td>
 			</tr>
 			<tr>
 				<td>Yessin Ajouaou</td>
 				<td>yessin1996@hotmail.com</td>
+				<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger" href="#modal"><i class="material-icons">toc</i></a></td>
 			</tr>
 		</tbody>
 	</table>	
