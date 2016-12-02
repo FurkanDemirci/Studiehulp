@@ -15,7 +15,7 @@ class HomeController extends Controller
     }
 
     public function getStudent () {
-    	return view('student');
+    	return  view('student');
     }
 
     public function getBegeleider () {

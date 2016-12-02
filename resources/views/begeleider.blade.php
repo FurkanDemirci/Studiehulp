@@ -61,6 +61,7 @@
 		</tbody>
 	</table>	
 </div>
+<br><br>
 
 	<!-- Modal Structure -->
 <div id="modal" class="modal">
@@ -72,16 +73,24 @@
 		<div class="row">
 			<div class="col s6">
 				<blockquote>
-      				Test:
+      				Email
     			</blockquote>
 			</div>
 			<div class="col s6">
-				
+
 			</div>
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		<div class="fixed-action-btn horizontal">
+			<a class="waves-effect waves-light btn-floating btn-large teal darken-1">
+				<i class="large material-icons">mode_edit</i>
+			</a>
+			<ul>
+				<li><a class="waves-effect waves-light btn-floating green"><i class="material-icons">subject</i></a></li>
+				<li><a class="waves-effect waves-light btn-floating blue"><i class="material-icons">email</i></a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
