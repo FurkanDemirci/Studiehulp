@@ -8,7 +8,7 @@
     	<div class="row center">
       		<br>
       			<h4 class="header center black-text">Student</h4>
-            <h6 class="header center black-text">Vul hier je preferencies in, aan de hand van deze gegevens zal er een afspraak gemaakt worden.</h6>
+            <h6 class="header center black-text">Vul hier je preferenties in, aan de hand van deze gegevens zal er een afspraak gemaakt worden.</h6>
           <br>
     	</div>
     </div>
