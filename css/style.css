@@ -27,3 +27,13 @@
 #footerCSS {
 	margin-top: 0px;
 }
+
+#fontHome {
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
+	/*text-shadow: 2px 2px #000000;*/
+}
+
+#fontHomeLow {
+
+}

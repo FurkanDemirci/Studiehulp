@@ -1,6 +1,7 @@
 <div class="navbar">
     <nav class="teal lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="../index.php" class="brand-logo"><b>ROC Ter AA</b> <i>studiehulp</i></a>
+        <div class="nav-wrapper container"><a id="logo-container" href="../index.php" class="brand-logo"><b>ROC Ter
+                    AA</b> <i>studiehulp</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="../tabs/student.php">Test1</a></li>

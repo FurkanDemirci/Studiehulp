@@ -112,7 +112,9 @@
             </ul>
             <br>
             <div class="row center">
-                <button class="btn waves-effect waves-light teal darken-1" type="submit" name="action">Opslaan
+                <button class="btn waves-effect waves-light teal darken-1"
+                        onclick="Materialize.toast('Succesvol bijgewerkt!', 3000, 'rounded')" type="submit"
+                        name="action">Opslaan
                     <i class="material-icons right">send</i>
                 </button>
             </div>
