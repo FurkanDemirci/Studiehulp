@@ -18,7 +18,7 @@
         <div class="container">
             <br>
             <br>
-            <h1 id="fontHome" class="card-panel z-depth-5 teal lighten-1 header center white-text">StudieHulp
+            <h1 id="fontHome" class="header center white-text">StudieHulp
                 begeleiding</h1>
             <div class="row center">
                 <h5 id="fontHomeLow" class="header col s12 white-text light">Lorem ipsum dolor sit amet, consectetuer
@@ -26,13 +26,13 @@
                     commodo ligula eget dolor. Aenean massa.</h5>
             </div>
             <div class="row center">
-                <a class="btn-large z-depth-2 hoverable waves-effect waves-light teal darken-1" href="">Beginnen</a>
+                <a class="btn-large hoverable waves-effect waves-light teal darken-1" href="">Beginnen</a>
             </div>
             <br>
             <br>
         </div>
     </div>
-    <div class="parallax"><img src="img/parallax1.jpg"></div>
+    <div id="divHomeBackground" class="parallax"><img id="homeBackground" src="img/parallax1.jpg"></div>
 </div>
 <div class="section white">
     <br>
@@ -74,7 +74,7 @@
     <br>
 </div>
 <div class="parallax-container">
-    <div class="parallax"><img src="img/parallax2.jpg"></div>
+    <div id="divHomeBackground" class="parallax"><img id="homeBackground" src="img/parallax2.jpg"></div>
 </div>
 
 

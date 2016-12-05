@@ -4,36 +4,44 @@
  * the core Materialize files in the future
  *
  * Made By MaterializeCSS.com
- */      
+ */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
 
 .brandlogo {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Login en registratie divs bijde een uiterlijk geven */
 #loginform {
-	/* Nog niks, misschien in de toekomst */
+    /* Nog niks, misschien in de toekomst */
 }
 
 #footerCSS {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
 #fontHome {
-	font-family: "Roboto", sans-serif;
-	font-weight: lighter;
-	/*text-shadow: 2px 2px #000000;*/
+    font-family: "Roboto", sans-serif;
+    /*text-shadow: 2px 2px #000000;*/
 }
 
 #fontHomeLow {
+    font-weight: lighter;
+}
 
+#homeBackground {
+    filter: blur(5px);
+}
+
+#divHomeBackground {
+    overflow: hidden;
 }
