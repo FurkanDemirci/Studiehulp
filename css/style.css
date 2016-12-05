@@ -19,8 +19,11 @@
 	margin-left: auto;
 }
 
-
 /* Login en registratie divs bijde een uiterlijk geven */
 #loginform {
 	/* Nog niks, misschien in de toekomst */
+}
+
+#footerCSS {
+	margin-top: 0px;
 }
