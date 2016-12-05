@@ -1,11 +1,11 @@
 <div class="navbar-fixed">
     <nav class="teal lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo"><b>ROC Ter AA</b> <i>studiehulp</i></a>
+        <div class="nav-wrapper container"><a id="logo-container" href="../index.php" class="brand-logo"><b>ROC Ter AA</b> <i>studiehulp</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="../tabs/student.php">Test1</a></li>
                 <li><a href="../tabs/begeleider.php">Test2</a></li>
-                <li><a class="teal darken-1 waves-effect waves-light btn" href="">Login</a></li>
+                <li><a class="teal darken-1 waves-effect waves-light btn" href="../tabs/login.php">Login</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">

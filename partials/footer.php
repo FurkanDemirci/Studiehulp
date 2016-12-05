@@ -23,7 +23,7 @@
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="#">ROC Ter AA</a></li>
+                    <li><a class="white-text" href="http://www.roc-teraa.nl/">ROC Ter AA</a></li>
                 </ul>
             </div>
         </div>

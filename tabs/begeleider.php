@@ -75,6 +75,38 @@
         </table>
     </div>
     <br><br>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="row center">
+                <h4>Voornaam Achternaam</h4>
+                <p>Gegevens</p>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <blockquote>
+                        Email:
+                    </blockquote>
+                </div>
+                <div class="col s6">
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating green"><i class="material-icons">library_books</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">email</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 <br><br>
 
