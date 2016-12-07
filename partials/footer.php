@@ -10,7 +10,7 @@
                     Ontwikkelaars: Furkan Demirci en Yaime van der Vleuten.
                 </p>
 
-                <img class="brandlogo" src="../img/brandlogo.png">
+                <img class="brandlogo" src="img/brandlogo.png">
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Settings</h5>
