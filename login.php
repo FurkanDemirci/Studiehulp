@@ -24,7 +24,7 @@
     </div>
     <div class="container">
         <div id="loginform" class="row">
-            <form class="col s12" action="" method="POST">
+            <form class="col s12" action="" method="">
                 <div class="row">
                     <div class="input-field col s12">
                         <input name="inlognaam" type="email" class="validate">
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div id="loginform" class="row">
-            <form class="col s12" action="includes/signup.inc.php" method="POST">
+            <form id="regform" class="col s12" action="includes/signup.inc.php" method="POST">
                 <div class="row">
                     <div class="input-field col s6">
                         <input name="first_name" type="text" class="validate">
@@ -76,15 +76,18 @@
                     </div>
                 </div>
                 <div class="row right">
-                    <button class="btn waves-effect waves-light red darken-4" onclick="test();" type="submit">
+                    <a class="btn waves-effect waves-light red darken-4" id="submitbtn">
                         Registreren
                         <i class="material-icons right">send</i>
-                    </button>
+                    </a>
 
                     <script type="text/javascript">
-                        function test() {
-                            swal("Good job!", "You clicked the button!", "success");
-                        }
+                        //                        function test() {
+                        //                            this.preventDefault();
+                        //
+                        //                        }
+
+
                     </script>
                 </div>
             </form>

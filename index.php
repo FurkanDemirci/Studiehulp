@@ -77,14 +77,6 @@
     <div id="divHomeBackground" class="parallax"><img id="homeBackground" src="img/parallax2.jpg"></div>
 </div>
 
-
-<script>
-    $(document).ready(function () {
-        $('.parallax').parallax();
-    });
-
-</script>
-
 <!-- Footer -->
 <?php require 'partials/footer.php'; ?>
 
