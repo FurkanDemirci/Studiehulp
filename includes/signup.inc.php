@@ -7,7 +7,10 @@ $lastname   = $_POST['last_name'];
 $email      = $_POST['email'];
 $password   = $_POST['password'];
 
-echo $firstname."<br>";
-echo $lastname."<br>";
-echo $email."<br>";
-echo $password."<br>"   ;
+$sql = "INSERT INTO users (email, password, firstname, lastname) 
+VALUES ('$firstname', '$lastname', '$email', '$password')";
+$result = mysqli_query($conn, $sql);
+
+header(
+    "Location: ../index.php"
+);

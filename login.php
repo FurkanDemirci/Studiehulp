@@ -52,7 +52,7 @@
             </div>
         </div>
         <div id="loginform" class="row">
-            <form class="col s12" action="../includes/signup.inc.php" method="POST">
+            <form class="col s12" action="includes/signup.inc.php" method="POST">
                 <div class="row">
                     <div class="input-field col s6">
                         <input name="first_name" type="text" class="validate">
