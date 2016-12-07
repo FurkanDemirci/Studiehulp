@@ -8,7 +8,7 @@ $email      = $_POST['email'];
 $password   = $_POST['password'];
 
 $sql = "INSERT INTO users (email, password, firstname, lastname) 
-VALUES ('$firstname', '$lastname', '$email', '$password')";
+VALUES ('$email', '$password', '$firstname', '$lastname')";
 $result = mysqli_query($conn, $sql);
 
 header(

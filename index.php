@@ -18,8 +18,8 @@
         <div class="container">
             <br>
             <br>
-            <h1 id="fontHome" class="header center white-text">StudieHulp
-                begeleiding</h1>
+            <h1 id="fontHome" class="header center white-text">Studiehulp
+                Begeleiding</h1>
             <div class="row center">
                 <h5 id="fontHomeLow" class="header col s12 white-text light">Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit. Aenean
