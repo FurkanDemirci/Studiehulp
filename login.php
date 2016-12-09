@@ -51,7 +51,7 @@ session_start();
                     </div>
                 </div>
                 <div class="row right">
-                    <button class="btn waves-effect waves-light red darken-4" type="submit">Inloggen
+                    <button class="btn waves-effect waves-light teal darken-1" type="submit">Inloggen
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -89,19 +89,10 @@ session_start();
                     </div>
                 </div>
                 <div class="row right">
-                    <a class="btn waves-effect waves-light red darken-4" id="submitbtn">
+                    <a class="btn waves-effect waves-light teal darken-1" id="submitbtn">
                         Registreren
                         <i class="material-icons right">send</i>
                     </a>
-
-                    <script type="text/javascript">
-                        //                        function test() {
-                        //                            this.preventDefault();
-                        //
-                        //                        }
-
-
-                    </script>
                 </div>
             </form>
         </div>
