@@ -12,7 +12,7 @@ $result = mysqli_query($conn, $sql);
 if (!$row = mysqli_fetch_assoc($result)) {
     echo "WRONG";
 } else {
-    $_SESSION['id'] = $row['id_users'];
+    $_SESSION['id'] = $row['firstname'];
 }
 
 header("Location: ../login.php");
