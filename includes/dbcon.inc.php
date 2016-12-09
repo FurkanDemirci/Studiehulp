@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "root", "shb");
+$conn = mysqli_connect("localhost", "root", "", "shb");
 
 if (!$conn) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -8,5 +8,3 @@ if (!$conn) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-
-echo "worked a matsko";
