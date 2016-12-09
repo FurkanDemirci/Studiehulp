@@ -28,11 +28,11 @@ session_start();
     </div>
 
     <?php
-        if (isset($_SESSION['id'])) {
-            echo $_SESSION['id'];
-        } else {
-            echo "You are not logged in";
-        }
+    if (isset($_SESSION['id'])) {
+        echo $_SESSION['id'];
+    } else {
+        echo "You are not logged in";
+    }
     ?>
 
     <div class="container">

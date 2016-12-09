@@ -5,12 +5,9 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>
                 <?php
-                if (isset($_SESSION['id']))
-                {
+                if (isset($_SESSION['id'])) {
                     echo '<li><a href="student.php">Student</a></li>';
-                }
-                else
-                {
+                } else {
                     echo '';
                 }
                 ?>
@@ -22,7 +19,7 @@
                     echo "<li><a class=\"teal darken-1 waves-effect waves-light btn\" href=\"login.php\">Login</a></li>";
                 }
                 ?>
-<!--                <li><a class="teal darken-1 waves-effect waves-light btn" href="login.php">Login</a></li>-->
+                <!--                <li><a class="teal darken-1 waves-effect waves-light btn" href="login.php">Login</a></li>-->
             </ul>
 
             <ul id="nav-mobile" class="side-nav">

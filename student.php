@@ -22,16 +22,16 @@ session_start();
             <div class="row center">
                 <br>
                 <?php
-                    echo '<h4 class="header center black-text">';
-                    echo 'Welkom ';
-                    echo '<b>';
-                    if (isset($_SESSION['id'])) {
-                        echo $_SESSION['id'];
-                    } else {
-                        echo "xXx_Pussy_Destroyer_69_xXx";
-                    }
-                    echo '</b>';
-                    echo '</h4>';
+                echo '<h4 class="header center black-text">';
+                echo 'Welkom ';
+                echo '<b>';
+                if (isset($_SESSION['id'])) {
+                    echo $_SESSION['id'];
+                } else {
+                    echo "xXx_Pussy_Destroyer_69_xXx";
+                }
+                echo '</b>';
+                echo '</h4>';
                 ?>
                 <h6 class="header center black-text">Vul hier je preferenties in, aan de hand van deze gegevens zal er
                     een afspraak gemaakt worden.</h6>

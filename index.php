@@ -25,19 +25,17 @@ session_start();
             <h1 id="fontHome" class="header center white-text">Studiehulp
                 Begeleiding</h1>
             <div class="row center">
-                <h5 id="fontHomeLow" class="header col s12 white-text light">Ontvang hulp van een ROC ter AA begeleider met het zoeken voor een
+                <h5 id="fontHomeLow" class="header col s12 white-text light">Ontvang hulp van een ROC ter AA begeleider
+                    met het zoeken voor een
                     opleiding/studie die bij jou past.</h5>
             </div>
             <div class="row center">
                 <?php
-                    if (isset($_SESSION['id']))
-                    {
-                       echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
-                    }
-                    else
-                    {
-                        echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="login.php">Naar Login</a>';
-                    }
+                if (isset($_SESSION['id'])) {
+                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
+                } else {
+                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="login.php">Naar Login</a>';
+                }
                 ?>
             </div>
             <br>
@@ -66,7 +64,8 @@ session_start();
                 <h5 class="center">Bewerk/Bekijk</h5>
 
                 <p class="light center">Bewerk je preferenties over de 6 categorieën. Zodra de data opgeslagen is,
-                kan een begeleider de preferenties bekijken en aan de hand van de informatie een afspraak in plannen.</p>
+                    kan een begeleider de preferenties bekijken en aan de hand van de informatie een afspraak in
+                    plannen.</p>
             </div>
         </div>
 
