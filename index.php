@@ -6,6 +6,7 @@ session_start();
 <html>
 <head>
     <title>Studiehulp</title>
+    <link rel="shortcut icon" href="img/titleIcon.ico" />
 
     <!-- stylesheets and meta info -->
     <?php require 'partials/head.php'; ?>
