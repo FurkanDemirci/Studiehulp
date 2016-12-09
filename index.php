@@ -29,7 +29,16 @@ session_start();
                     opleiding/studie die bij jou past.</h5>
             </div>
             <div class="row center">
-                <a class="btn-large hoverable waves-effect waves-light teal darken-1" href="">Beginnen</a>
+                <?php
+                    if (isset($_SESSION['id']))
+                    {
+                       echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
+                    }
+                    else
+                    {
+                        echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="login.php">Naar Login</a>';
+                    }
+                ?>
             </div>
             <br>
             <br>
@@ -46,7 +55,7 @@ session_start();
                 <h2 class="center teal-text"><i class="material-icons">assignment_ind</i></h2>
                 <h5 class="center">Registreer/Login</h5>
 
-                <p class="light center">Registreer een account/Login met je account
+                <p class="light center">Registreer of login met je account
                     om je preferenties te bewerken of te bekijken. Begeleiders kunnen deze informatie bekijken.</p>
             </div>
         </div>
