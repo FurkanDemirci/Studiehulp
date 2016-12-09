@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +26,22 @@
             </div>
         </div>
     </div>
+
+    <?php
+        if (isset($_SESSION['id'])) {
+            echo $_SESSION['id'];
+        } else {
+            echo "You are not logged in";
+        }
+    ?>
+
     <div class="container">
         <div id="loginform" class="row">
-            <form class="col s12" action="" method="">
+            <form class="col s12" action="includes/login.inc.php" method="POST">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input name="inlognaam" type="email" class="validate">
-                        <label for="inlognaam">Email</label>
+                        <input name="email" type="email" class="validate">
+                        <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
