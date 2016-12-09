@@ -65,7 +65,7 @@ session_start();
                 <h2 class="center teal-text"><i class="material-icons">list</i></h2>
                 <h5 class="center">Bewerk/Bekijk</h5>
 
-                <p class="light center">Bewerk je preferenties over de 6 categorieën. Zodra de data opgeslagen
+                <p class="light center">Bewerk je preferenties over de 6 categorieën. Zodra de data opgeslagen is,
                 kan een begeleider de preferenties bekijken en aan de hand van de informatie een afspraak in plannen.</p>
             </div>
         </div>
