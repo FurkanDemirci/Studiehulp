@@ -4,7 +4,16 @@
                     AA</b></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="student.php">Student</a></li>
+                <?php
+                if (isset($_SESSION['id']))
+                {
+                    echo '<li><a href="student.php">Student</a></li>';
+                }
+                else
+                {
+                    echo '';
+                }
+                ?>
                 <li><a href="begeleider.php">Begeleider</a></li>
                 <?php
                 if (isset($_SESSION['id'])) {
