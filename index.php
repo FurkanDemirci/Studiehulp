@@ -21,9 +21,8 @@
             <h1 id="fontHome" class="header center white-text">Studiehulp
                 Begeleiding</h1>
             <div class="row center">
-                <h5 id="fontHomeLow" class="header col s12 white-text light">Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit. Aenean
-                    commodo ligula eget dolor. Aenean massa.</h5>
+                <h5 id="fontHomeLow" class="header col s12 white-text light">Ontvang hulp met het zoeken voor een
+                    opleiding/studie die bij jou past.</h5>
             </div>
             <div class="row center">
                 <a class="btn-large hoverable waves-effect waves-light teal darken-1" href="">Beginnen</a>
@@ -40,22 +39,19 @@
     <div class="row container">
         <div class="col s12 m4">
             <div class="icon-block">
-                <h2 class="center red-text"><i class="material-icons">list</i></h2>
-                <h5 class="center">Lorem ipsum dolor sit</h5>
+                <h2 class="center red-text"><i class="material-icons">assignment_ind</i></h2>
+                <h5 class="center">Registreer/Login</h5>
 
-                <p class="light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p class="light">Registreer een account/Login met je account om je preferenties te bewerken/bekijken.</p>
             </div>
         </div>
 
         <div class="col s12 m4">
             <div class="icon-block">
-                <h2 class="center red-text"><i class="material-icons">assignment_ind</i></h2>
-                <h5 class="center">Lorem ipsum dolor sit</h5>
+                <h2 class="center red-text"><i class="material-icons">list</i></h2>
+                <h5 class="center">Bewerk/Bekijk</h5>
 
-                <p class="light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+                <p class="light">Bewerk je preferenties over de 6 categorieën.</p>
             </div>
         </div>
 
