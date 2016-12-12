@@ -2,6 +2,10 @@
 session_start();
 ?>
 
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +32,7 @@ session_start();
                 if (isset($_SESSION['id'])) {
                     echo $_SESSION['id'];
                 } else {
-                    echo "xXx_Pussy_Destroyer_69_xXx";
+                    echo "Admin";
                 }
                 echo '</b>';
                 echo '</h4>';
@@ -41,7 +45,7 @@ session_start();
     </div>
 
     <div class="container">
-        <form action="" method="POST">
+        <form action="includes/studentText.inc.php" method="POST">
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header active"><i class="material-icons">thumb_up</i>Wat je leuk vind</div>
@@ -49,7 +53,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea1" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -62,7 +66,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea2" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -75,7 +79,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea3" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -88,7 +92,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea4" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -102,7 +106,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea5" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -117,7 +121,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea6" class="materialize-textarea"></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>

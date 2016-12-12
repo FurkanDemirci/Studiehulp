@@ -35,7 +35,7 @@ session_start();
                 if (isset($_SESSION['id'])) {
                     echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
                 } else {
-                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="login.php">Naar Login</a>';
+                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="#modal1">Naar Login</a>';
                 }
                 ?>
             </div>
