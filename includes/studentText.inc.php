@@ -9,8 +9,14 @@ include 'dbcon.inc.php';
     $textarea5 = $_POST['textarea5'];
     $textarea6 = $_POST['textarea6'];
 
+$sql = "INSERT INTO preference (leuk, nietleuk, sterkepunt, zwakkepunt, sterkepunt_ander, zwakkepunt_ander)
+VALUES ('$textarea1', '$textarea2', '$textarea3', '$textarea4', '$textarea5', '$textarea6')";
 
-
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 //    echo $textarea1;
 //    echo $textarea2;
 //    echo $textarea3;
