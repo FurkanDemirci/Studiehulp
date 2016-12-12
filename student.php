@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <?php
-
+include 'includes/studentLoad.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +53,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea1" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea1"
+                                              class="materialize-textarea"><?php echo $textarea1; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -66,7 +67,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea2" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea2"
+                                              class="materialize-textarea"><?php echo $textarea2; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -79,7 +81,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea3" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea3"
+                                              class="materialize-textarea"><?php echo $textarea3; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -92,7 +95,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea4" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea4"
+                                              class="materialize-textarea"><?php echo $textarea4; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -106,7 +110,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea5" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea5"
+                                              class="materialize-textarea"><?php echo $textarea5; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -121,7 +126,8 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea name="textarea6" class="materialize-textarea"></textarea>
+                                    <textarea name="textarea6"
+                                              class="materialize-textarea"><?php echo $textarea6; ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
