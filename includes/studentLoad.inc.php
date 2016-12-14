@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
 //        echo "id: " . $row["leuk"]. " - Name: " . $row["nietleuk"]. " " . $row["sterkepunt"]. "<br>";
     }
 } else {
-    echo "0 results";
+    $textResults = "Geen resultaat";
 }
 
 ?>

@@ -36,6 +36,11 @@ include 'includes/studentLoad.inc.php';
                 }
                 echo '</b>';
                 echo '</h4>';
+                if (isset($textResults)) {
+                    echo $textResults;
+                } else {
+                    echo "Data opgehaald";
+                }
                 ?>
                 <h6 class="header center black-text">Vul hier je preferenties in, aan de hand van deze gegevens zal er
                     een afspraak gemaakt worden.</h6>
@@ -54,7 +59,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea1"
-                                              class="materialize-textarea"><?php echo $textarea1; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea1)) {
+                                            echo $textarea1;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -68,7 +79,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea2"
-                                              class="materialize-textarea"><?php echo $textarea2; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea2)) {
+                                            echo $textarea2;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -82,7 +99,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea3"
-                                              class="materialize-textarea"><?php echo $textarea3; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea3)) {
+                                            echo $textarea3;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -96,7 +119,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea4"
-                                              class="materialize-textarea"><?php echo $textarea4; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea4)) {
+                                            echo $textarea4;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -111,7 +140,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea5"
-                                              class="materialize-textarea"><?php echo $textarea5; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea5)) {
+                                            echo $textarea5;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
@@ -127,7 +162,13 @@ include 'includes/studentLoad.inc.php';
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea name="textarea6"
-                                              class="materialize-textarea"><?php echo $textarea6; ?></textarea>
+                                              class="materialize-textarea"><?php
+                                        if (isset($textarea6)) {
+                                            echo $textarea6;
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?></textarea>
                                     <label for="textarea1">Vul in</label>
                                 </div>
                             </div>
