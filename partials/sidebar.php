@@ -5,7 +5,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>
                 <?php
-                if (isset($_SESSION['id'])) {
+                if (isset($_SESSION['user'])) {
                     echo '<li><a href="student.php">Student</a></li>';
                 } else {
                     echo '';
@@ -13,7 +13,7 @@
                 ?>
                 <li><a href="begeleider.php">Begeleider</a></li>
                 <?php
-                if (isset($_SESSION['id'])) {
+                if (isset($_SESSION['user'])) {
                     echo '<li><a class="teal darken-1 waves-effect waves-light btn" href="includes/logout.inc.php">Logout</a></li> ';
 //                    echo '<li><form action="includes/logout.inc.php"><button class="teal darken-1 waves-effect waves-light btn">Logout</button></form></li>';
                 } else {
@@ -44,7 +44,7 @@
                 </li>
                 <li><a class="subheader">Account</a></li>
                 <?php
-                if (isset($_SESSION['id'])) {
+                if (isset($_SESSION['user'])) {
                     echo '<li><a class="waves-effect" href="includes/logout.inc.php"><i class="material-icons">supervisor_account</i>Logout</a></li>';
 //                    echo '<li><form action="includes/logout.inc.php"><button class="waves-effect btn">Logout</button></form></li>';
                 } else {
@@ -64,15 +64,14 @@
             <div class="section no-pad-bot" id="index-banner">
                 <div class="container">
                     <div class="row center">
-                        <br>
                         <h4 class="header center black-text">Inloggen</h4>
                     </div>
                 </div>
             </div>
 
             <?php
-            if (isset($_SESSION['id'])) {
-                echo $_SESSION['id'];
+            if (isset($_SESSION['user'])) {
+                echo $_SESSION['id_users'];
             } else {
                 echo "You are not logged in";
             }
@@ -93,16 +92,20 @@
                             <label for="password">Password</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="row right">
-                            <button class="btn waves-effect waves-light teal darken-1" type="submit">Inloggen
-                                <i class="material-icons right">send</i>
-                            </button>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="row right">
+                                <button class="btn waves-effect waves-light teal darken-1" type="submit">Inloggen
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                            <div class="row left">
+                                <a class="btn-floating btn-large waves-effect waves-light teal darken-1"
+                                   onclick="$('#modal1').modal('close');" href="#modal2"><i
+                                            class="material-icons">add</i></a>
+                            </div>
                         </div>
-                        <div class="row left">
-                            <a class="waves-effect waves-light btn teal darken-1" onclick="$('#modal1').modal('close');"
-                               href="#modal2">Registreren</a>
-                        </div>
+                        <!--                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>-->
                     </div>
                 </form>
             </div>
@@ -116,7 +119,6 @@
             <div class="section no-pad-bot" id="index-banner">
                 <div class="container">
                     <div class="row center">
-                        <br>
                         <h4 class="header center black-text">Registreren</h4>
                     </div>
                 </div>

@@ -29,8 +29,8 @@ include 'includes/studentLoad.inc.php';
                 echo '<h4 class="header center black-text">';
                 echo 'Welkom ';
                 echo '<b>';
-                if (isset($_SESSION['id'])) {
-                    echo $_SESSION['id'];
+                if (isset($_SESSION['user'])) {
+                    echo $_SESSION['user']['firstname'];
                 } else {
                     echo "Admin";
                 }
