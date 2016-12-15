@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include 'dbcon.inc.php';
 
@@ -9,8 +10,7 @@ $textarea4 = $_POST['textarea4'];
 $textarea5 = $_POST['textarea5'];
 $textarea6 = $_POST['textarea6'];
 
-$sql = "INSERT INTO preference (leuk, nietleuk, sterkepunt, zwakkepunt, sterkepunt_ander, zwakkepunt_ander)
-VALUES ('$textarea1', '$textarea2', '$textarea3', '$textarea4', '$textarea5', '$textarea6')";
+$sql = "UPDATE preference SET leuk = '$textarea1', nietleuk = '$textarea2', sterkepunt = '$textarea3', zwakkepunt = '$textarea4', sterkepunt_ander = '$textarea5', zwakkepunt_ander = '$textarea6' WHERE id_preference = '" . $_SESSION['user']['fk_preference'] . "'";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
@@ -23,4 +23,6 @@ if (mysqli_query($conn, $sql)) {
 //    echo $textarea4;
 //    echo $textarea5;
 //    echo $textarea6;
+
+//`id_preference`='" . $_SESSION['user']['fk_preferences'] . "',
 ?>

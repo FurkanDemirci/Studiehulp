@@ -1,7 +1,8 @@
 <?php
+
 include 'dbcon.inc.php';
 
-$sql = "SELECT leuk, nietleuk, sterkepunt, zwakkepunt, sterkepunt_ander, zwakkepunt_ander FROM preference";
+$sql = "SELECT leuk, nietleuk, sterkepunt, zwakkepunt, sterkepunt_ander, zwakkepunt_ander FROM preference WHERE id_preference = '" . $_SESSION['user']['fk_preference'] . "'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {

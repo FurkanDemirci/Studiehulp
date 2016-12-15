@@ -32,7 +32,7 @@ session_start();
             </div>
             <div class="row center">
                 <?php
-                if (isset($_SESSION['id'])) {
+                if (isset($_SESSION['user'])) {
                     echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
                 } else {
                     echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="#modal1">Naar Login</a>';

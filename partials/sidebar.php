@@ -71,7 +71,7 @@
 
             <?php
             if (isset($_SESSION['user'])) {
-                echo $_SESSION['id_users'];
+                echo $_SESSION['user']['id_users'];
             } else {
                 echo "You are not logged in";
             }
