@@ -1,8 +1,6 @@
 <?php
 session_start();
-?>
 
-<?php
 include 'includes/studentLoad.inc.php';
 ?>
 

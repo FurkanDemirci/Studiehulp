@@ -2,6 +2,10 @@
 session_start();
 ?>
 
+<?php
+include 'includes/accounts.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,30 +55,27 @@ session_start();
             </thead>
 
             <tbody>
-            <tr>
-                <td>Furkan Demirci</td>
-                <td>furkan.demirci@live.nl</td>
-                <td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
-                       href="#modal"><i class="material-icons">toc</i></a></td>
-            </tr>
-            <tr>
-                <td>Yaime van der Vleuten</td>
-                <td>yaimevdv@hotmail.com</td>
-                <td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
-                       href="#modal"><i class="material-icons">toc</i></a></td>
-            </tr>
-            <tr>
-                <td>Davey Cornelissen</td>
-                <td>d.cornilissen8@gmail.com</td>
-                <td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
-                       href="#modal"><i class="material-icons">toc</i></a></td>
-            </tr>
-            <tr>
-                <td>Yessin Ajouaou</td>
-                <td>yessin1996@hotmail.com</td>
-                <td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
-                       href="#modal"><i class="material-icons">toc</i></a></td>
-            </tr>
+            <?php
+            if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) {
+                    $firstname = $row['firstname'];
+                    $lastname = $row['lastname'];
+                    $email = $row['email'];
+
+
+                    echo "<tr>";
+                    echo "<td>".$row['firstname'];
+                    echo " ".$row['lastname']."</td>";
+                    echo "<td>".$row['email']."</td>";
+                    echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
+                       href="#modal"><i class="material-icons">toc</i></a></td>';
+                    echo "</tr>";
+                }
+            } else {
+                echo "0 results";
+            }
+            ?>
             </tbody>
         </table>
     </div>
@@ -84,13 +85,18 @@ session_start();
     <div id="modal" class="modal">
         <div class="modal-content">
             <div class="row center">
-                <h4>Voornaam Achternaam</h4>
+                <h4><?php
+                    echo "Voornaam";
+                    echo " Achternaam";
+                    ?></h4>
                 <p>Gegevens</p>
             </div>
             <div class="row">
                 <div class="col s6">
                     <blockquote>
-                        Email:
+                        <h4>Email:</h4> <?php
+                        echo "email";
+                        ?>
                     </blockquote>
                 </div>
                 <div class="col s6">
