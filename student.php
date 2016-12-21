@@ -8,6 +8,7 @@ include 'includes/studentLoad.inc.php';
 <html>
 <head>
     <title>Studiehulp</title>
+    <link rel="shortcut icon" href="img/titleIcon.ico"/>
 
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>

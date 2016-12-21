@@ -14,13 +14,23 @@ if (!$row = mysqli_fetch_assoc($result)) {
     echo '</img>';
 } else {
     $_SESSION['user'] = $row;
-    $sql = 'SELECT * FROM preferences WHERE id="'. $row['fk_preferences'] .'"';
+    $sql = 'SELECT * FROM preferences WHERE id="' . $row['fk_preferences'] . '"';
     $result = mysqli_query($conn, $sql);
     if ($row = mysqli_fetch_assoc($result)) {
         $_SESSION['user']['preferences'] = $row;
     } else {
 
     }
-    header("Location: ../student.php");
+
+    switch ($_SESSION['user']['type']) {
+        case "0":
+            header("Location: ../student.php");
+            break;
+        case "1":
+            header("Location: ../begeleider.php");
+            break;
+        default:
+            echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
+    }
 }
 ?>

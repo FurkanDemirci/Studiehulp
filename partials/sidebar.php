@@ -5,13 +5,26 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>
                 <?php
+
                 if (isset($_SESSION['user'])) {
-                    echo '<li><a href="student.php">Student</a></li>';
+                    switch ($_SESSION['user']['type']) {
+                        case "0":
+                            echo '<li><a href="student.php">Student</a></li>';
+                            break;
+                        case "1":
+                            echo '<li><a href="begeleider.php">Begeleider</a></li>';
+                            break;
+                        default:
+                            echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
+                    }
+//                    if ($_SESSION['user']['type'] == 0) {
+//
+//                    }
                 } else {
                     echo '';
                 }
                 ?>
-                <li><a href="begeleider.php">Begeleider</a></li>
+
                 <?php
                 if (isset($_SESSION['user'])) {
                     echo '<li><a class="teal darken-1 waves-effect waves-light btn" href="includes/logout.inc.php">Logout</a></li> ';
