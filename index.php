@@ -33,7 +33,16 @@ session_start();
             <div class="row center">
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
+                    switch ($_SESSION ['user']['type']) {
+                        case "0":
+                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="student.php">Naar Student</a>';
+                            break;
+                        case "1":
+                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="begeleider.php">Naar Begeleider</a>';
+                            break;
+                        default:
+                            echo "SOMETHING'S NOT QUITE RIGHT";
+                    }
                 } else {
                     echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="#modal1">Naar Login</a>';
                 }
