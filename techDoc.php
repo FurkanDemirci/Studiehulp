@@ -108,7 +108,7 @@
         </div>
         <div class="col s2"></div>
         <div class="col s12 center" style="padding-top: 10px;">
-            <a class="btn" href="index.php">Back</a>
+            <a class="btn waves-effect" href="index.php">Back</a>
         </div>
     </div>
 </div>
