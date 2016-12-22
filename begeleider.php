@@ -26,8 +26,19 @@ include 'includes/accounts.inc.php';
         <div class="container">
             <div class="row center">
                 <br>
-                <h4 class="header center black-text">Begeleider</h4>
-                <br>
+                <?php
+                echo '<h4 class="header center black-text">';
+                echo 'Welkom ';
+                echo '<b>';
+                if (isset($_SESSION['user'])) {
+                    echo $_SESSION['user']['firstname'];
+                } else {
+                    echo "Admin";
+                }
+                echo '</b>';
+                echo '</h4>';
+                ?>
+                <h6 class="header center black-text">Bekijk hier informatie over studenten en verstuur email naar student.</h6>
             </div>
         </div>
     </div>
