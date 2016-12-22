@@ -18,7 +18,6 @@ $sql = 'INSERT INTO `preference` (`id_preference`, `leuk`, `nietleuk`, `sterkepu
 /* echo $id;
 die();*/
 
-
 //$sql = "INSERT INTO users (email, password, firstname, lastname, fk_preferences)
 //VALUES ('$email', '$password', '$firstname', '$lastname', '$id')";
 $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "'. $email .'", "'. $password .'", "'. $firstname .'", "'. $lastname .'", "'. $id .'", 0);';
@@ -28,6 +27,4 @@ if ( mysqli_query($conn, $query) ) {
 } else {
     die( "Error: " . $sql . "<br>" . mysqli_error($conn));
 }
-
-
 ?>
