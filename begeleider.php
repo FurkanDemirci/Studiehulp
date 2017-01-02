@@ -15,7 +15,7 @@ include 'includes/accounts.inc.php';
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
 </head>
-<body>
+<body class="teal">
 
 <!-- Sidebar -->
 <?php require 'partials/sidebar.php'; ?>
@@ -27,7 +27,7 @@ include 'includes/accounts.inc.php';
             <div class="row center">
                 <br>
                 <?php
-                echo '<h4 class="header center black-text">';
+                echo '<h4 class="header center white-text">';
                 echo 'Welkom ';
                 echo '<b>';
                 if (isset($_SESSION['user'])) {
@@ -38,7 +38,8 @@ include 'includes/accounts.inc.php';
                 echo '</b>';
                 echo '</h4>';
                 ?>
-                <h6 class="header center black-text">Bekijk hier informatie over studenten en verstuur email naar student.</h6>
+                <h6 class="header center white-text">Bekijk hier informatie over studenten en verstuur email naar
+                    student.</h6>
             </div>
         </div>
     </div>
@@ -50,46 +51,48 @@ include 'includes/accounts.inc.php';
                     <div class="input-field">
                         <input id="search" type="search" onkeyup="searchFunction()" placeholder="Zoek naar namen.."
                                required>
-                        <label for="search"><i class="material-icons">search</i></label>
+                        <label for="search"><i class="material-icons white-text">search</i></label>
                         <i class="material-icons">close</i>
                     </div>
                 </div>
             </div>
         </div>
 
-        <table id="myTable" class="bordered highlight centered">
-            <thead>
-            <tr>
-                <th>Volledige naam</th>
-                <th>Email</th>
-                <th>Open</th>
-            </tr>
-            </thead>
+        <div class="row col s12 m6">
+            <table id="myTable" class="white z-depth-2 bordered highlight centered">
+                <thead>
+                <tr>
+                    <th>Volledige naam</th>
+                    <th>Email</th>
+                    <th>Open</th>
+                </tr>
+                </thead>
 
-            <tbody>
-            <?php
-            if (mysqli_num_rows($result) > 0) {
-                // output data of each row
-                while($row = mysqli_fetch_assoc($result)) {
-                    $firstname = $row['firstname'];
-                    $lastname = $row['lastname'];
-                    $email = $row['email'];
+                <tbody>
+                <?php
+                if (mysqli_num_rows($result) > 0) {
+                    // output data of each row
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $firstname = $row['firstname'];
+                        $lastname = $row['lastname'];
+                        $email = $row['email'];
 
 
-                    echo "<tr>";
-                    echo "<td>".$row['firstname'];
-                    echo " ".$row['lastname']."</td>";
-                    echo "<td>".$row['email']."</td>";
-                    echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-1 modal-trigger"
+                        echo "<tr>";
+                        echo "<td>" . $row['firstname'];
+                        echo " " . $row['lastname'] . "</td>";
+                        echo "<td>" . $row['email'] . "</td>";
+                        echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger"
                        href="#modal"><i class="material-icons">toc</i></a></td>';
-                    echo "</tr>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "0 results";
                 }
-            } else {
-                echo "0 results";
-            }
-            ?>
-            </tbody>
-        </table>
+                ?>
+                </tbody>
+            </table>
+        </div>
     </div>
     <br><br>
 

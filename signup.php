@@ -49,7 +49,7 @@
         <img src="img/loginIcon.png" style="width: 100px;">
         <div class="section"></div>
 
-        <h5 class="white-text">StudieKeuze Begeleiding</h5>
+        <h5 class="white-text">Registreren</h5>
         <div class="section"></div>
 
         <div class="container">
@@ -94,7 +94,7 @@
                     <br/>
                     <center>
                         <div class='row'>
-                            <button type="submit" class='col s12 btn btn-large waves-effect teal darken-1'>
+                            <button type="submit" class='col s12 btn btn-large waves-effect teal darken-4'>
                                 Registreren
                                 <i class="material-icons right">send</i>
                             </button>
@@ -103,7 +103,7 @@
                 </form>
             </div>
         </div>
-        <a class="btn waves-effect red darken-4" href="index.php">Back</a>
+        <a class="btn waves-effect red darken-4" href="index.php">Terug</a>
         <a class="btn waves-effect teal darken-4" href="login.php">Al een account?</a>
     </center>
 

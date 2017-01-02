@@ -8,14 +8,14 @@
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
 </head>
-<body>
+<body class="teal">
 
 <!-- Content -->
 <div class="container">
     <div class="row center" style="padding-top: 15px;">
         <div class="col s12 m4 l2"></div>
-        <div id="docStyle" class="col s12 m4 l8 grey lighten-4">
-            <div class="divider"></div>
+        <div id="docStyle" class="col s12 m4 l8 grey lighten-1">
+
             <div class="section">
                 <h5>What is the goal of the website?</h5>
                 <p>Het doel van de website is om studenten die moeilijkheden hebben met het zoeken naar een opleiding
@@ -108,7 +108,7 @@
         </div>
         <div class="col s12 m4 l2"></div>
         <div class="col s12 center" style="padding-top: 10px;">
-            <a class="btn waves-effect" href="index.php">Back</a>
+            <a class="btn waves-effect teal darken-4" href="index.php">Back</a>
         </div>
     </div>
 </div>

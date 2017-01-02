@@ -13,7 +13,7 @@ include 'includes/studentLoad.inc.php';
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
 </head>
-<body>
+<body class="teal">
 
 <!-- Sidebar -->
 <?php require 'partials/sidebar.php'; ?>
@@ -25,7 +25,7 @@ include 'includes/studentLoad.inc.php';
             <div class="row center">
                 <br>
                 <?php
-                echo '<h4 class="header center black-text">';
+                echo '<h4 class="header center white-text">';
                 echo 'Welkom ';
                 echo '<b>';
                 if (isset($_SESSION['user'])) {
@@ -36,12 +36,12 @@ include 'includes/studentLoad.inc.php';
                 echo '</b>';
                 echo '</h4>';
                 if (isset($textResults)) {
-                    echo $textResults;
+                    echo "<p class='white-text'>$textResults</p>";
                 } else {
-                    echo "Data opgehaald";
+                    echo "<p class='white-text'>Data opgehaald</p>";
                 }
                 ?>
-                <h6 class="header center black-text">Vul hier je preferenties in, aan de hand van deze gegevens zal er
+                <h6 class="header center white-text">Vul hier je preferenties in, aan de hand van deze gegevens zal er
                     een afspraak gemaakt worden.</h6>
                 <br>
             </div>
@@ -50,7 +50,7 @@ include 'includes/studentLoad.inc.php';
 
     <div class="container">
         <form action="includes/studentText.inc.php" method="POST">
-            <ul class="collapsible" data-collapsible="accordion">
+            <ul class="collapsible white" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header active"><i class="material-icons">thumb_up</i>Wat je leuk vind</div>
                     <div class="collapsible-body">
@@ -177,7 +177,7 @@ include 'includes/studentLoad.inc.php';
             </ul>
             <br>
             <div class="row center">
-                <button class="btn waves-effect waves-light teal darken-1"
+                <button class="btn waves-effect waves-light teal darken-4"
                         onclick="Materialize.toast('Succesvol bijgewerkt!', 3000, 'rounded')" type="submit"
                         name="action">Opslaan
                     <i class="material-icons right">send</i>
