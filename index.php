@@ -44,7 +44,7 @@ session_start();
                             echo "SOMETHING'S NOT QUITE RIGHT";
                     }
                 } else {
-                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="#modal1">Naar Login</a>';
+                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-1" href="login.php">Naar Login</a>';
                 }
                 ?>
             </div>

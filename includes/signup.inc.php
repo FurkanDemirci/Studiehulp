@@ -23,7 +23,8 @@ die();*/
 $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "'. $email .'", "'. $password .'", "'. $firstname .'", "'. $lastname .'", "'. $id .'", 0);';
 //$result = mysqli_query($conn, $query);
 if ( mysqli_query($conn, $query) ) {
-    header("Location: ../index.php");
+    echo '<script type="text/javascript">alert("Account Aangemaakt!");
+          window.location.replace("../login.php");</script>';
 } else {
     die( "Error: " . $sql . "<br>" . mysqli_error($conn));
 }

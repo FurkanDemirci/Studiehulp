@@ -13,8 +13,8 @@
 <!-- Content -->
 <div class="container">
     <div class="row center" style="padding-top: 15px;">
-        <div class="col s2"></div>
-        <div id="docStyle" class="col s8 grey lighten-4">
+        <div class="col s12 m4 l2"></div>
+        <div id="docStyle" class="col s12 m4 l8 grey lighten-4">
             <div class="divider"></div>
             <div class="section">
                 <h5>What is the goal of the website?</h5>
@@ -106,7 +106,7 @@
             <!--        hand van de gegevens een afspraak maken met de student om een gesprek aan te gaan over de gegevens om zo een-->
             <!--        passende opleiding te vinden.-->
         </div>
-        <div class="col s2"></div>
+        <div class="col s12 m4 l2"></div>
         <div class="col s12 center" style="padding-top: 10px;">
             <a class="btn waves-effect" href="index.php">Back</a>
         </div>
