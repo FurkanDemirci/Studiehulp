@@ -76,12 +76,13 @@ include 'includes/accounts.inc.php';
                         $firstname = $row['firstname'];
                         $lastname = $row['lastname'];
                         $email = $row['email'];
+                        $id = $row['id_users'];
 
 
                         echo "<tr>";
-                        echo "<td>" . $row['firstname'];
-                        echo " " . $row['lastname'] . "</td>";
-                        echo "<td>" . $row['email'] . "</td>";
+                        echo "<td>" . $firstname;
+                        echo " " . $lastname . "</td>";
+                        echo "<td>" . $email . "</td>";
                         echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger"
                        href="#modal"><i class="material-icons">toc</i></a></td>';
                         echo "</tr>";
@@ -101,8 +102,7 @@ include 'includes/accounts.inc.php';
         <div class="modal-content">
             <div class="row center">
                 <h4><?php
-                    echo "Voornaam";
-                    echo " Achternaam";
+
                     ?></h4>
                 <p>Gegevens</p>
             </div>
