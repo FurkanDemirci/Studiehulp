@@ -2,10 +2,6 @@
 session_start();
 ?>
 
-<?php
-include 'includes/accounts.inc.php';
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +34,7 @@ include 'includes/accounts.inc.php';
                 echo '</b>';
                 echo '</h4>';
                 ?>
-                <h6 class="header center white-text">Bekijk hier informatie over studenten en verstuur email naar
+                <h6 class="header center white-text">Zoek hier naar student via mail, bekijk daarna zijn preferenties en verstuur email naar
                     student.</h6>
             </div>
         </div>
@@ -48,52 +44,67 @@ include 'includes/accounts.inc.php';
         <div class="row">
             <div class="col s12">
                 <div class="row">
-                    <div class="input-field">
-                        <input id="search" type="search" onkeyup="searchFunction()" placeholder="Zoek naar namen.."
-                               required>
-                        <label for="search"><i class="material-icons white-text">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
+                    <form class="col s12" action="includes/accounts.inc.php" method="POST">
+                        <div class="row white z-depth-4" style="padding-left: 20px; padding-right: 20px;">
+                            <div class='row'>
+                                <div class='col s12'>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='input-field col s12'>
+                                    <input class='validate' type='email' name='email'/>
+                                    <label for='email'>Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class='row'>
+                            <button type="submit" class='col s12 btn btn-large waves-effect teal darken-4'>
+                                Zoeken
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="row col s12 m6">
-            <table id="myTable" class="white z-depth-2 bordered highlight centered">
-                <thead>
-                <tr>
-                    <th>Volledige naam</th>
-                    <th>Email</th>
-                    <th>Open</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <?php
-                if (mysqli_num_rows($result) > 0) {
-                    // output data of each row
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $firstname = $row['firstname'];
-                        $lastname = $row['lastname'];
-                        $email = $row['email'];
-                        $id = $row['id_users'];
-
-
-                        echo "<tr>";
-                        echo "<td>" . $firstname;
-                        echo " " . $lastname . "</td>";
-                        echo "<td>" . $email . "</td>";
-                        echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger"
-                       href="#modal"><i class="material-icons">toc</i></a></td>';
-                        echo "</tr>";
-                    }
-                } else {
-                    echo "0 results";
-                }
-                ?>
-                </tbody>
-            </table>
-        </div>
+        <!--        <div class="row col s12 m6">-->
+        <!--            <table id="myTable" class="white z-depth-2 bordered highlight centered">-->
+        <!--                <thead>-->
+        <!--                <tr>-->
+        <!--                    <th>Volledige naam</th>-->
+        <!--                    <th>Email</th>-->
+        <!--                    <th>Open</th>-->
+        <!--                </tr>-->
+        <!--                </thead>-->
+        <!---->
+        <!--                <tbody>-->
+        <!--                --><?php
+        //                if (mysqli_num_rows($result) > 0) {
+        //                    // output data of each row
+        //                    while ($row = mysqli_fetch_assoc($result)) {
+        //                        $firstname = $row['firstname'];
+        //                        $lastname = $row['lastname'];
+        //                        $email = $row['email'];
+        //                        $id = $row['id_users'];
+        //
+        //
+        //                        echo "<tr>";
+        //                        echo "<td>" . $firstname;
+        //                        echo " " . $lastname . "</td>";
+        //                        echo "<td>" . $email . "</td>";
+        //                        echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger"
+        //                       href="#modal"><i class="material-icons">toc</i></a></td>';
+        //                        echo "</tr>";
+        //                    }
+        //                } else {
+        //                    echo "0 results";
+        //                }
+        //                ?>
+        <!--                </tbody>-->
+        <!--            </table>-->
+        <!--        </div>-->
     </div>
     <br><br>
 
@@ -138,24 +149,24 @@ include 'includes/accounts.inc.php';
 <!-- JavaScript en Jquery -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-    function searchFunction() {
-        var input, filter, table, tr, td, i;
-        input = document.getElementById("search");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
+    //    function searchFunction() {
+    //        var input, filter, table, tr, td, i;
+    //        input = document.getElementById("search");
+    //        filter = input.value.toUpperCase();
+    //        table = document.getElementById("myTable");
+    //        tr = table.getElementsByTagName("tr");
+    //
+    //        for (i = 0; i < tr.length; i++) {
+    //            td = tr[i].getElementsByTagName("td")[0];
+    //            if (td) {
+    //                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+    //                    tr[i].style.display = "";
+    //                } else {
+    //                    tr[i].style.display = "none";
+    //                }
+    //            }
+    //        }
+    //    }
 
     $(document).ready(function () {
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered

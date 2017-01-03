@@ -1,5 +1,3 @@
-<script src="../dist/sweetalert.min.js"></script>
-
 <?php
 session_start();
 
