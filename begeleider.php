@@ -45,7 +45,7 @@ session_start();
             <div class="col s12">
                 <div class="row">
                     <form class="col s12" action="includes/accounts.inc.php" method="POST">
-                        <div class="row white z-depth-4" style="padding-left: 20px; padding-right: 20px;">
+                        <div class="row card z-depth-4" style="padding-left: 20px; padding-right: 20px;">
                             <div class='row'>
                                 <div class='col s12'>
                                 </div>

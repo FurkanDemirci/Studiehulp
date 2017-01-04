@@ -47,10 +47,26 @@
                     </div>
                 </li>
                 <li><a class="waves-effect" href="index.php"><i class="material-icons">store</i>Home</a></li>
-                <li><a class="waves-effect" href="student.php"><i class="material-icons">subject</i>Student</a>
-                </li>
-                <li><a class="waves-effect" href="begeleider.php"><i class="material-icons">assignment</i>Begeleider</a>
-                </li>
+                <?php
+
+                if (isset($_SESSION['user'])) {
+                    switch ($_SESSION['user']['type']) {
+                        case "0":
+                            echo '<li><a class="waves-effect" href="student.php"><i class="material-icons">subject</i>Student</a></li>';
+                            break;
+                        case "1":
+                            echo '<li><a class="waves-effect" href="begeleider.php"><i class="material-icons">assignment</i>Begeleider</a></li>';
+                            break;
+                        default:
+                            echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
+                    }
+//                    if ($_SESSION['user']['type'] == 0) {
+//
+//                    }
+                } else {
+                    echo '';
+                }
+                ?>
                 <li>
                     <div class="divider"></div>
                 </li>

@@ -21,15 +21,11 @@ if (!$row = mysqli_fetch_assoc($result)) {
         $firstname = $_SESSION['student']['firstname'];
 
         $test = $_SESSION['preferences']['leuk'];
-
-        echo $test;
-
-        echo $firstname;
     } else {
 
     }
 
-    session_destroy();
+    header("Location: ../gegevens.php");
 }
 
 //$sql = 'SELECT * FROM users';

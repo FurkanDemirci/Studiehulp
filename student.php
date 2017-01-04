@@ -50,7 +50,7 @@ include 'includes/studentLoad.inc.php';
 
     <div class="container">
         <form action="includes/studentText.inc.php" method="POST">
-            <ul class="collapsible white" data-collapsible="accordion">
+            <ul class="collapsible card" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header active"><i class="material-icons">thumb_up</i>Wat je leuk vind</div>
                     <div class="collapsible-body">
