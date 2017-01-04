@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row center" style="padding-top: 15px;">
         <div class="col s12 m4 l2"></div>
-        <div id="docStyle" class="col s12 m4 l8 grey lighten-1">
+        <div id="docStyle" class="col s12 m4 l8 card blue-grey darken-1 z-depth-4 white-text">
 
             <div class="section">
                 <h5>What is the goal of the website?</h5>
@@ -31,7 +31,7 @@
                     een
                     passende opleiding te vinden.</p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>How does it achieve this goal?</h5>
                 <p>De gebruiker begint met het maken van een account. Zodra het account is aangemaakt worden de gegevens
@@ -51,7 +51,7 @@
                     studenten op te zoeken. Student kan dus niet Begeleider bezoeken en Begeleider kan Student niet
                     bezoeken.</p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>What problems have arisen?</h5>
                 <p>Het eerste probleem was dat de website te ingewikkeld ingedeeld was om met een framework te werken.
@@ -63,7 +63,7 @@
                     om verder te werken MAMP. We gebruiken nu de webserver XAMPP.
                 </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>What problems could arise?</h5>
                 <p>Problemen waar we tegenaan kunnen lopen zijn bijvoorbeeld: Bugs. Met Bugs kan een persoon de website
@@ -76,7 +76,7 @@
                     problemen voor de website kan veroorzaken.
                 </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>What could be expanded upon?</h5>
                 <p>Uiteindelijk als de website helemaal af is, willen we een applicatie maken die helpt de website te
@@ -85,14 +85,14 @@
                     te
                     vullen in de browser. </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>What problems could expansion cause?</h5>
                 <p>De website is niet compatible met een app applicatie. Een voorbeeld kan zijn dat het formaat niet
                     meer
                     past op het scherm. </p>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
             <div class="section">
                 <h5>What naming/formatting conventions should be followed?</h5>
                 <p>Alles staat in het Nederlands. HTML, PHP, CSS, Javascript, Jquery en SQL. Website is responsive voor
@@ -108,7 +108,7 @@
         </div>
         <div class="col s12 m4 l2"></div>
         <div class="col s12 center" style="padding-top: 10px;">
-            <a class="btn waves-effect teal darken-4" href="index.php">Back</a>
+            <a class="btn waves-effect teal darken-4" href="index.php">Terug</a>
         </div>
     </div>
 </div>
