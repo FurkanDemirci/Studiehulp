@@ -154,7 +154,7 @@ if (!isset($_SESSION['student'])) {
         <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
-        <li><a class="btn-floating green"><i class="material-icons">delete</i></a></li>
+        <li><a href="includes/delete.inc.php" class="btn-floating green"><i class="material-icons">delete</i></a></li>
         <li><a class="btn-floating blue"><i class="material-icons">email</i></a></li>
     </ul>
 </div>

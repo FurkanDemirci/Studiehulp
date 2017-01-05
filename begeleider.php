@@ -34,7 +34,8 @@ session_start();
                 echo '</b>';
                 echo '</h4>';
                 ?>
-                <h6 class="header center white-text">Zoek hier naar student via mail, bekijk daarna zijn preferenties en verstuur email naar
+                <h6 class="header center white-text">Zoek hier naar student via mail, bekijk daarna zijn preferenties en
+                    verstuur email naar
                     student.</h6>
             </div>
         </div>
