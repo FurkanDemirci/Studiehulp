@@ -14,7 +14,6 @@ if (mysqli_num_rows($result) > 0) {
         $textarea4 = $row["zwakkepunt"];
         $textarea5 = $row["sterkepunt_ander"];
         $textarea6 = $row["zwakkepunt_ander"];
-//        echo "id: " . $row["leuk"]. " - Name: " . $row["nietleuk"]. " " . $row["sterkepunt"]. "<br>";
     }
 } else {
     $textResults = "Geen resultaat";

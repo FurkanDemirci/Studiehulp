@@ -17,18 +17,10 @@ if (!$row = mysqli_fetch_assoc($result)) {
     $result = mysqli_query($conn, $sql);
     if ($row = mysqli_fetch_assoc($result)) {
         $_SESSION['preferences'] = $row;
-
-        $firstname = $_SESSION['student']['firstname'];
-
-        $test = $_SESSION['preferences']['leuk'];
     } else {
-
+        echo "Probleem bij het laden...";
     }
 
     header("Location: ../gegevens.php");
 }
-
-//$sql = 'SELECT * FROM users';
-//$result = mysqli_query($conn, $sql);
-
 ?>

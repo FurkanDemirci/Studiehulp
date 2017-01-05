@@ -12,13 +12,6 @@ $result = mysqli_query($conn, $sql);
 if (!$row = mysqli_fetch_assoc($result)) {
     echo '<script type="text/javascript">alert("Foute Gegevens");
           window.location.replace("../login.php");</script>';
-
-//        echo    "<script type='text/javascript'>
-//                $('#modal1').modal('open');
-//                </script>
-//                ";
-//    echo '<img src="../img/wrong.gif">';
-//    echo '</img>';
 } else {
     $_SESSION['user'] = $row;
     $sql = 'SELECT * FROM preferences WHERE id="' . $row['fk_preferences'] . '"';
@@ -26,7 +19,7 @@ if (!$row = mysqli_fetch_assoc($result)) {
     if ($row = mysqli_fetch_assoc($result)) {
         $_SESSION['user']['preferences'] = $row;
     } else {
-
+        echo "Geen preferences connectie?";
     }
 
     switch ($_SESSION['user']['type']) {

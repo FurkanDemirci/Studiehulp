@@ -18,12 +18,4 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-//    echo $textarea1;
-//    echo $textarea2;
-//    echo $textarea3;
-//    echo $textarea4;
-//    echo $textarea5;
-//    echo $textarea6;
-
-//`id_preference`='" . $_SESSION['user']['fk_preferences'] . "',
 ?>

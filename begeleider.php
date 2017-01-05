@@ -69,43 +69,6 @@ session_start();
                 </div>
             </div>
         </div>
-
-        <!--        <div class="row col s12 m6">-->
-        <!--            <table id="myTable" class="white z-depth-2 bordered highlight centered">-->
-        <!--                <thead>-->
-        <!--                <tr>-->
-        <!--                    <th>Volledige naam</th>-->
-        <!--                    <th>Email</th>-->
-        <!--                    <th>Open</th>-->
-        <!--                </tr>-->
-        <!--                </thead>-->
-        <!---->
-        <!--                <tbody>-->
-        <!--                --><?php
-        //                if (mysqli_num_rows($result) > 0) {
-        //                    // output data of each row
-        //                    while ($row = mysqli_fetch_assoc($result)) {
-        //                        $firstname = $row['firstname'];
-        //                        $lastname = $row['lastname'];
-        //                        $email = $row['email'];
-        //                        $id = $row['id_users'];
-        //
-        //
-        //                        echo "<tr>";
-        //                        echo "<td>" . $firstname;
-        //                        echo " " . $lastname . "</td>";
-        //                        echo "<td>" . $email . "</td>";
-        //                        echo '<td><a class="waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger"
-        //                       href="#modal"><i class="material-icons">toc</i></a></td>';
-        //                        echo "</tr>";
-        //                    }
-        //                } else {
-        //                    echo "0 results";
-        //                }
-        //                ?>
-        <!--                </tbody>-->
-        <!--            </table>-->
-        <!--        </div>-->
     </div>
     <br><br>
 
@@ -150,30 +113,10 @@ session_start();
 <!-- JavaScript en Jquery -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-    //    function searchFunction() {
-    //        var input, filter, table, tr, td, i;
-    //        input = document.getElementById("search");
-    //        filter = input.value.toUpperCase();
-    //        table = document.getElementById("myTable");
-    //        tr = table.getElementsByTagName("tr");
-    //
-    //        for (i = 0; i < tr.length; i++) {
-    //            td = tr[i].getElementsByTagName("td")[0];
-    //            if (td) {
-    //                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-    //                    tr[i].style.display = "";
-    //                } else {
-    //                    tr[i].style.display = "none";
-    //                }
-    //            }
-    //        }
-    //    }
-
     $(document).ready(function () {
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal();
     });
-
 </script>
 
 <!-- Footer -->

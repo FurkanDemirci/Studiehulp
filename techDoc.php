@@ -99,12 +99,6 @@
                     elk
                     formaat. User Friendly.</p>
             </div>
-            <!--        <h4>What is the goal of the website?</h4><br>-->
-            <!--        Het doel van de website is om studenten die moeilijkheden hebben met het zoeken naar een opleiding die bij hun-->
-            <!--        past. Studenten die hun huidige opleiding niet leuk genoeg vinden, kunnen ook gebruik maken van de website. De-->
-            <!--        Student maakt een account aan en vullen preferenties in die de begeleiding van Studiehulp kan bekijken. Aan de-->
-            <!--        hand van de gegevens een afspraak maken met de student om een gesprek aan te gaan over de gegevens om zo een-->
-            <!--        passende opleiding te vinden.-->
         </div>
         <div class="col s12 m4 l2"></div>
         <div class="col s12 center" style="padding-top: 10px;">

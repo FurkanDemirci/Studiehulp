@@ -23,13 +23,8 @@ if ($row = mysqli_fetch_assoc($result)) {
         } else {
             die("Error: " . $sql . "<br>" . mysqli_error($conn));
         }
-        /* echo $id;
-        die();*/
 
-//$sql = "INSERT INTO users (email, password, firstname, lastname, fk_preferences)
-//VALUES ('$email', '$password', '$firstname', '$lastname', '$id')";
         $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "' . $email . '", "' . $password . '", "' . $firstname . '", "' . $lastname . '", "' . $id . '", 0);';
-//$result = mysqli_query($conn, $query);
         if (mysqli_query($conn, $query)) {
             echo '<script type="text/javascript">alert("Account Aangemaakt!");
           window.location.replace("../login.php");</script>';
@@ -38,6 +33,6 @@ if ($row = mysqli_fetch_assoc($result)) {
         }
     }
 } else {
-    echo "Geen connectie huh ?";
+    echo "Niet kunnen selecteren uit database ?";
 }
 ?>

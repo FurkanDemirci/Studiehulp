@@ -16,4 +16,3 @@ if (!$row = mysqli_fetch_assoc($result)) {
 }
 
 session_destroy();
-
