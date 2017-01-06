@@ -3,10 +3,11 @@ session_start();
 
 include 'dbcon.inc.php';
 
-$firstname = $_POST['first_name'];
-$lastname = $_POST['last_name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$password = mysqli_real_escape_string($conn, $_POST['password']);
+$firstname = mysqli_real_escape_string($conn, $_POST['first_name']);
+$lastname = mysqli_real_escape_string($conn, $_POST['last_name']);
+
 
 if (empty($firstname)) {
     header("Location: ../signup?error=empty");
@@ -39,8 +40,15 @@ if ($row = mysqli_fetch_assoc($result)) {
         }
 
         $encrypted_pwd = password_hash($password, PASSWORD_DEFAULT);
-        $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "' . $email . '", "' . $encrypted_pwd . '", "' . $firstname . '", "' . $lastname . '", "' . $id . '", 0);';
-        if (mysqli_query($conn, $query)) {
+        $query = $conn->prepare("INSERT INTO users (id_users, email, password, firstname, lastname, fk_preference, type) VALUES (NULL, ?, ?, ?, ?, $id, 0)");
+        $query->bind_param("ssss", $email_stmt, $encrypted_pwd_stmt, $firstname_stmt, $lastname_stmt);
+
+        $email_stmt = $email;
+        $encrypted_pwd_stmt = $encrypted_pwd;
+        $firstname_stmt = $firstname;
+        $lastname_stmt = $lastname;
+
+        if ($query->execute()) {
             echo '<script type="text/javascript">alert("Account Aangemaakt!");
           window.location.replace("../login");</script>';
         } else {

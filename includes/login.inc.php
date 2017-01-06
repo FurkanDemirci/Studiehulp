@@ -3,11 +3,18 @@ session_start();
 
 include 'dbcon.inc.php';
 
-$email = $_POST['email'];
-$password = $_POST['password'];
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$password = mysqli_real_escape_string($conn, $_POST['password']);
 
-$sql = "SELECT * FROM users WHERE email='$email'";
-$result = mysqli_query($conn, $sql);
+$sql = $conn->prepare("SELECT * FROM users WHERE email=?");
+$sql->bind_param("s", $email_stmt);
+
+$email_stmt = $email;
+$sql->execute();
+
+$result = $sql->get_result();
+//$rowNum = $result->num_rows;
+
 $row = mysqli_fetch_assoc($result);
 $hash_pwd = $row['password'];
 $hash = password_verify($password, $hash_pwd);
