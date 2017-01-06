@@ -48,6 +48,6 @@ if ($row = mysqli_fetch_assoc($result)) {
         }
     }
 } else {
-    echo "Niet kunnen selecteren uit database ?";
+    echo "Niet kunnen selecteren uit database. Heb altijd 1 row (gebruiker, alles mag leeg zijn) in je database staan zodat die kan zoeken naar email.";
 }
 ?>
