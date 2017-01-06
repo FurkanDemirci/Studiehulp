@@ -3,12 +3,12 @@ session_start();
 
 include 'dbcon.inc.php';
 
-$textarea1 = mysqli_real_escape_string($conn, $_POST['textarea1']);
-$textarea2 = mysqli_real_escape_string($conn, $_POST['textarea2']);
-$textarea3 = mysqli_real_escape_string($conn, $_POST['textarea3']);
-$textarea4 = mysqli_real_escape_string($conn, $_POST['textarea4']);
-$textarea5 = mysqli_real_escape_string($conn, $_POST['textarea5']);
-$textarea6 = mysqli_real_escape_string($conn, $_POST['textarea6']);
+$textarea1 = $_POST['textarea1'];
+$textarea2 = $_POST['textarea2'];
+$textarea3 = $_POST['textarea3'];
+$textarea4 = $_POST['textarea4'];
+$textarea5 = $_POST['textarea5'];
+$textarea6 = $_POST['textarea6'];
 
 $sql = $conn->prepare("UPDATE preference SET leuk = ?, nietleuk = ?, sterkepunt = ?, zwakkepunt = ?, sterkepunt_ander = ?, zwakkepunt_ander = ? WHERE id_preference = '" . $_SESSION['user']['fk_preference'] . "'");
 $sql->bind_param("ssssss", $textarea1_stmt, $textarea2_stmt, $textarea3_stmt, $textarea4_stmt, $textarea5_stmt, $textarea6_stmt);
