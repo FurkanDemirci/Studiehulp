@@ -49,7 +49,7 @@
         <img src="img/loginIcon.png" style="width: 100px;">
         <div class="section"></div>
 
-        <h5 class="white-text">Inloggen</h5>
+        <h4 class="white-text">Inloggen</h4>
         <div class="section"></div>
 
         <div class="container">
@@ -90,8 +90,8 @@
                 </form>
             </div>
         </div>
-        <a class="btn waves-effect red darken-4" href="index.php">Terug</a>
-        <a class="btn waves-effect teal darken-4" href="signup.php">Geen account?</a>
+        <a class="btn waves-effect red darken-4" href="../studiehulp">Terug</a>
+        <a class="btn waves-effect teal darken-4" href="signup">Geen account?</a>
     </center>
 
     <div class="section"></div>

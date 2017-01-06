@@ -146,7 +146,7 @@ if (!isset($_SESSION['student'])) {
     <div class="col s12 m2"></div>
 </div>
 <div class="row center">
-    <a class="waves-effect waves-light btn red darken-4" href="begeleider.php">Andere student</a>
+    <a class="waves-effect waves-light btn red darken-4" href="begeleider">Andere student</a>
 </div>
 
 <div class="fixed-action-btn click-to-toggle">

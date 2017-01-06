@@ -1,16 +1,16 @@
 <div class="navbar">
     <nav class="teal darken-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo"><b>ROC Ter
+        <div class="nav-wrapper container"><a id="logo-container" href="../studiehulp" class="brand-logo"><b>ROC Ter
                     AA</b></a>
             <ul class="right hide-on-med-and-down">
                 <?php
                 if (isset($_SESSION['user'])) {
                     switch ($_SESSION['user']['type']) {
                         case "0":
-                            echo '<li><a href="student.php">Student</a></li>';
+                            echo '<li><a href="student">Student</a></li>';
                             break;
                         case "1":
-                            echo '<li><a href="begeleider.php">Begeleider</a></li>';
+                            echo '<li><a href="begeleider">Begeleider</a></li>';
                             break;
                         default:
                             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
@@ -24,7 +24,7 @@
                 if (isset($_SESSION['user'])) {
                     echo '<li><a class="teal darken-1 waves-effect waves-light btn" href="includes/logout.inc.php">Logout</a></li> ';
                 } else {
-                    echo '<li><a class="teal darken-1 waves-effect waves-light btn" href="login.php">Login</a></li>';
+                    echo '<li><a class="teal darken-1 waves-effect waves-light btn" href="login">Login</a></li>';
                 }
                 ?>
             </ul>
@@ -40,15 +40,15 @@
                         <a href="#"><span class="white-text email">Admin@test.test</span></a>
                     </div>
                 </li>
-                <li><a class="waves-effect" href="index.php"><i class="material-icons">store</i>Home</a></li>
+                <li><a class="waves-effect" href="../studiehulp"><i class="material-icons">store</i>Home</a></li>
                 <?php
                 if (isset($_SESSION['user'])) {
                     switch ($_SESSION['user']['type']) {
                         case "0":
-                            echo '<li><a class="waves-effect" href="student.php"><i class="material-icons">subject</i>Student</a></li>';
+                            echo '<li><a class="waves-effect" href="student"><i class="material-icons">subject</i>Student</a></li>';
                             break;
                         case "1":
-                            echo '<li><a class="waves-effect" href="begeleider.php"><i class="material-icons">assignment</i>Begeleider</a></li>';
+                            echo '<li><a class="waves-effect" href="begeleider"><i class="material-icons">assignment</i>Begeleider</a></li>';
                             break;
                         default:
                             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
@@ -65,7 +65,7 @@
                 if (isset($_SESSION['user'])) {
                     echo '<li><a class="waves-effect" href="includes/logout.inc.php"><i class="material-icons">supervisor_account</i>Logout</a></li>';
                 } else {
-                    echo '<li><a class="waves-effect" href="login.php"><i class="material-icons">supervisor_account</i>Login</a></li>';
+                    echo '<li><a class="waves-effect" href="login"><i class="material-icons">supervisor_account</i>Login</a></li>';
                 }
                 ?>
             </ul>

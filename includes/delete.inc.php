@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 
 if (!$row = mysqli_fetch_assoc($result)) {
     echo '<script type="text/javascript">alert("Gelukt!");
-          window.location.replace("../begeleider.php");</script>';
+          window.location.replace("../begeleider");</script>';
 } else {
     echo "wel gelukt";
 }

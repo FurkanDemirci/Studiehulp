@@ -49,7 +49,13 @@
         <img src="img/loginIcon.png" style="width: 100px;">
         <div class="section"></div>
 
-        <h5 class="white-text">Registreren</h5>
+        <h4 class="white-text">Registreren</h4>
+        <?php
+        $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        if (strpos($url, 'error=empty') !== false) {
+            echo '<h5>Niet alles is ingevuld!</h5>';
+        }
+        ?>
         <div class="section"></div>
 
         <div class="container">
@@ -103,8 +109,8 @@
                 </form>
             </div>
         </div>
-        <a class="btn waves-effect red darken-4" href="index.php">Terug</a>
-        <a class="btn waves-effect teal darken-4" href="login.php">Al een account?</a>
+        <a class="btn waves-effect red darken-4" href="../studiehulp">Terug</a>
+        <a class="btn waves-effect teal darken-4" href="login">Al een account?</a>
     </center>
 
     <div class="section"></div>

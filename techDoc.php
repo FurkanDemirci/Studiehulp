@@ -102,7 +102,7 @@
         </div>
         <div class="col s12 m4 l2"></div>
         <div class="col s12 center" style="padding-top: 10px;">
-            <a class="btn waves-effect teal darken-4" href="index.php">Terug</a>
+            <a class="btn waves-effect teal darken-4" href="../studiehulp">Terug</a>
         </div>
     </div>
 </div>

@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 
 if (!$row = mysqli_fetch_assoc($result)) {
     echo '<script type="text/javascript">alert("Niet gevonden!");
-          window.location.replace("../begeleider.php");</script>';
+          window.location.replace("../begeleider");</script>';
 } else {
     $_SESSION['student'] = $row;
     $sql = 'SELECT * FROM preference WHERE id_preference="' . $row['fk_preference'] . '"';
@@ -21,6 +21,6 @@ if (!$row = mysqli_fetch_assoc($result)) {
         echo "Probleem bij het laden...";
     }
 
-    header("Location: ../gegevens.php");
+    header("Location: ../gegevens");
 }
 ?>

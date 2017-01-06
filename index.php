@@ -35,16 +35,16 @@ session_start();
                 if (isset($_SESSION['user'])) {
                     switch ($_SESSION ['user']['type']) {
                         case "0":
-                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="student.php">Naar Student</a>';
+                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="student">Naar Student</a>';
                             break;
                         case "1":
-                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="begeleider.php">Naar Begeleider</a>';
+                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="begeleider">Naar Begeleider</a>';
                             break;
                         default:
                             echo "SOMETHING'S NOT QUITE RIGHT";
                     }
                 } else {
-                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="login.php">Registreer / Login</a>';
+                    echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="login">Registreer / Login</a>';
                 }
                 ?>
             </div>

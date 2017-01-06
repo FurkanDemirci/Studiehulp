@@ -11,7 +11,7 @@ $result = mysqli_query($conn, $sql);
 
 if (!$row = mysqli_fetch_assoc($result)) {
     echo '<script type="text/javascript">alert("Foute Gegevens");
-          window.location.replace("../login.php");</script>';
+          window.location.replace("../login");</script>';
 } else {
     $_SESSION['user'] = $row;
     $sql = 'SELECT * FROM preferences WHERE id="' . $row['fk_preferences'] . '"';
@@ -24,10 +24,10 @@ if (!$row = mysqli_fetch_assoc($result)) {
 
     switch ($_SESSION['user']['type']) {
         case "0":
-            header("Location: ../student.php");
+            header("Location: ../student");
             break;
         case "1":
-            header("Location: ../begeleider.php");
+            header("Location: ../begeleider");
             break;
         default:
             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';

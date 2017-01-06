@@ -8,13 +8,27 @@ $lastname = $_POST['last_name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+if (empty($firstname)) {
+    header("Location: ../signup?error=empty");
+    exit();
+} elseif (empty($lastname)) {
+    header("Location: ../signup?error=empty");
+    exit();
+} elseif (empty($email)) {
+    header("Location: ../signup?error=empty");
+    exit();
+} elseif (empty($password)) {
+    header("Location: ../signup?error=empty");
+    exit();
+}
+
 $sql = 'SELECT email FROM users';
 $result = mysqli_query($conn, $sql);
 
 if ($row = mysqli_fetch_assoc($result)) {
     if ($email == $row['email']) {
         echo '<script type="text/javascript">alert("Email bestaat al!");
-          window.location.replace("../signup.php");</script>';
+          window.location.replace("../signup");</script>';
     } else {
         $sql = 'INSERT INTO `preference` (`id_preference`, `leuk`, `nietleuk`, `sterkepunt`, `zwakkepunt`, `sterkepunt_ander`, `zwakkepunt_ander`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL)';
         if (mysqli_query($conn, $sql)) {
@@ -27,7 +41,7 @@ if ($row = mysqli_fetch_assoc($result)) {
         $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "' . $email . '", "' . $password . '", "' . $firstname . '", "' . $lastname . '", "' . $id . '", 0);';
         if (mysqli_query($conn, $query)) {
             echo '<script type="text/javascript">alert("Account Aangemaakt!");
-          window.location.replace("../login.php");</script>';
+          window.location.replace("../login");</script>';
         } else {
             die("Error: " . $sql . "<br>" . mysqli_error($conn));
         }

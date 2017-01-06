@@ -14,7 +14,7 @@ $sql = "UPDATE preference SET leuk = '$textarea1', nietleuk = '$textarea2', ster
 
 if (mysqli_query($conn, $sql)) {
     echo '<script type="text/javascript">alert("Gelukt!");
-          window.location.replace("../student.php");</script>';
+          window.location.replace("../student");</script>';
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
