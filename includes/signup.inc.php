@@ -38,7 +38,8 @@ if ($row = mysqli_fetch_assoc($result)) {
             die("Error: " . $sql . "<br>" . mysqli_error($conn));
         }
 
-        $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "' . $email . '", "' . $password . '", "' . $firstname . '", "' . $lastname . '", "' . $id . '", 0);';
+        $encrypted_pwd = password_hash($password, PASSWORD_DEFAULT);
+        $query = 'INSERT INTO `users` (`id_users`, `email`, `password`, `firstname`, `lastname`, `fk_preference`, `type`) VALUES (NULL, "' . $email . '", "' . $encrypted_pwd . '", "' . $firstname . '", "' . $lastname . '", "' . $id . '", 0);';
         if (mysqli_query($conn, $query)) {
             echo '<script type="text/javascript">alert("Account Aangemaakt!");
           window.location.replace("../login");</script>';
