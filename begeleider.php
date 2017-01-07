@@ -10,6 +10,9 @@ session_start();
 
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
+
+    <!-- script tags -->
+    <?php require 'partials/javascript.php'; ?>
 </head>
 <body class="teal">
 
@@ -85,9 +88,6 @@ session_start();
 
 <!-- Footer -->
 <?php require 'partials/footer.php'; ?>
-
-<!-- script tags -->
-<?php require 'partials/javascript.php'; ?>
 
 </body>
 </html>

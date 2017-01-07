@@ -14,8 +14,6 @@
                 <h5 class="white-text">Settings</h5>
                 <ul>
                     <li><a class="white-text" href="techDoc">Technische Documentatie</a></li>
-                    <li><a class="white-text" href="#">Test2</a></li>
-                    <li><a class="white-text" href="#">Test3</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">

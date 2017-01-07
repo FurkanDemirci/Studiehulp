@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION['user'])) {
+        header("Location: ../studiehulp");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +16,8 @@
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
 
+    <!-- script tags -->
+    <?php require 'partials/javascript.php'; ?>
     <style>
         body {
             display: flex;
@@ -112,8 +122,15 @@
 
 </html>
 
-<!-- script tags -->
-<?php require 'partials/javascript.php'; ?>
-
 </body>
+
+<?php
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if (strpos($url, 'acc=gelukt') !== false) {
+    echo '<script>account();</script>';
+} elseif (strpos($url, 'fout=gvns') !== false) {
+    echo '<script>loginWrong();</script>';
+}
+?>
+
 </html>

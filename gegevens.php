@@ -16,6 +16,9 @@ if (!isset($_SESSION['student'])) {
     <!-- stylesheets and meta info -->
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
+
+    <!-- script tags -->
+    <?php require 'partials/javascript.php'; ?>
 </head>
 <body class="teal">
 
@@ -162,10 +165,6 @@ if (!isset($_SESSION['student'])) {
 
 <!-- Footer -->
 <?php require 'partials/footer.php'; ?>
-
-<!-- script tags -->
-<?php require 'partials/javascript.php'; ?>
-
 
 <?php
 //session_destroy();

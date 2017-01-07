@@ -21,8 +21,7 @@ $textarea5_stmt = $textarea5;
 $textarea6_stmt = $textarea6;
 
 if ($sql->execute()) {
-    echo '<script type="text/javascript">alert("Gelukt!");
-          window.location.replace("../student");</script>';
+    header("Location: ../student?prfs=gelukt");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

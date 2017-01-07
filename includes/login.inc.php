@@ -20,8 +20,7 @@ $hash_pwd = $row['password'];
 $hash = password_verify($password, $hash_pwd);
 
 if ($hash == 0) {
-    echo '<script type="text/javascript">alert("Foute Gegevens");
-          window.location.replace("../login");</script>';
+    header("Location: ../login?fout=gvns");
 } else {
     $sql = "SELECT * FROM users WHERE email='$email' AND password='$hash_pwd'";
     $result = mysqli_query($conn, $sql);

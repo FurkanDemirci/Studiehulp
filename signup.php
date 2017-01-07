@@ -8,6 +8,9 @@
     <?php require 'partials/head.php'; ?>
     <?php require 'partials/stylesheets.php'; ?>
 
+    <!-- script tags -->
+    <?php require 'partials/javascript.php'; ?>
+
     <style>
         body {
             display: flex;
@@ -40,7 +43,6 @@
     </style>
 </head>
 
-
 <!-- Content -->
 <body class="teal">
 <div class="section"></div>
@@ -50,12 +52,6 @@
         <div class="section"></div>
 
         <h4 class="white-text">Registreren</h4>
-        <?php
-        $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-        if (strpos($url, 'error=empty') !== false) {
-            echo '<h5>Niet alles is ingevuld!</h5>';
-        }
-        ?>
         <div class="section"></div>
 
         <div class="container">
@@ -122,8 +118,12 @@
 
 </html>
 
-<!-- script tags -->
-<?php require 'partials/javascript.php'; ?>
+<?php
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if (strpos($url, 'error=empty') !== false) {
+    echo '<script>signup();</script>';
+}
+?>
 
 </body>
 </html>

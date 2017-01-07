@@ -49,8 +49,7 @@ if ($row = mysqli_fetch_assoc($result)) {
         $lastname_stmt = $lastname;
 
         if ($query->execute()) {
-            echo '<script type="text/javascript">alert("Account Aangemaakt!");
-          window.location.replace("../login");</script>';
+            header("Location: ../login?acc=gelukt");
         } else {
             die("Error: " . $sql . "<br>" . mysqli_error($conn));
         }
