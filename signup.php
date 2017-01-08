@@ -123,6 +123,10 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 if (strpos($url, 'error=empty') !== false) {
     echo '<script>signup();</script>';
 }
+
+if (strpos($url, 'email==exist') !== false) {
+    echo '<script>emailBestaat();</script>';
+}
 ?>
 
 </body>

@@ -28,7 +28,7 @@ $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 
-    while($row = mysqli_fetch_assoc($result)) {
+    while ($row = mysqli_fetch_assoc($result)) {
         if ($email == $row['email']) {
             $emailCheck = true;
             break;
@@ -38,8 +38,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 
     if ($emailCheck == true) {
-        echo '<script type="text/javascript">alert("Email bestaat al!");
-          window.location.replace("../signup");</script>';
+        header("Location: ../signup?email==exist");
     } else {
         $sql = 'INSERT INTO `preference` (`id_preference`, `leuk`, `nietleuk`, `sterkepunt`, `zwakkepunt`, `sterkepunt_ander`, `zwakkepunt_ander`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL)';
         if (mysqli_query($conn, $sql)) {

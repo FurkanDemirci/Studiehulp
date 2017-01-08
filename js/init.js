@@ -31,3 +31,7 @@ function uitgelogd() {
     });
     setTimeout(function(){ window.location.replace("../../studiehulp"); }, 2000);
 }
+
+function emailBestaat() {
+    swal("Email bestaat al!", "Al een account? Probeer in te loggen", "error");
+}

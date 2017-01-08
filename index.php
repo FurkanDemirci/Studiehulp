@@ -26,8 +26,8 @@ session_start();
         <div class="col s12">
             <br>
             <br>
-            <h1 id="fontHome" class="header center white-text">Studiekeuze
-                Begeleiding</h1>
+            <h2 id="fontHome" class="header center white-text">Studiekeuze
+                Begeleiding</h2>
             <div class="row center">
                 <h5 id="fontHomeLow" class="header col s12 white-text light">Ontvang hulp van een ROC ter AA begeleider
                     met het zoeken voor een
