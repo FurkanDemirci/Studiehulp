@@ -29,4 +29,5 @@ function uitgelogd() {
         timer: 2000,
         showConfirmButton: false
     });
+    setTimeout(function(){ window.location.replace("../../studiehulp"); }, 2000);
 }

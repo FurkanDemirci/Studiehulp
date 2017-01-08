@@ -23,11 +23,21 @@ if (empty($firstname)) {
     exit();
 }
 
-$sql = 'SELECT email FROM users';
+$sql = "SELECT email FROM users";
 $result = mysqli_query($conn, $sql);
 
-if ($row = mysqli_fetch_assoc($result)) {
-    if ($email == $row['email']) {
+if (mysqli_num_rows($result) > 0) {
+
+    while($row = mysqli_fetch_assoc($result)) {
+        if ($email == $row['email']) {
+            $emailCheck = true;
+            break;
+        } else {
+            $emailCheck = false;
+        }
+    }
+
+    if ($emailCheck == true) {
         echo '<script type="text/javascript">alert("Email bestaat al!");
           window.location.replace("../signup");</script>';
     } else {
