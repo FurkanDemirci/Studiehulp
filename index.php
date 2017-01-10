@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Studiekeuze Begeleiding</title>
+    <title>Studiekeuzebegeleiding</title>
     <link rel="shortcut icon" href="img/titleIcon.ico"/>
 
     <!-- stylesheets and meta info -->
@@ -26,10 +26,9 @@ session_start();
         <div class="col s12">
             <br>
             <br>
-            <h2 id="fontHome" class="header center white-text">Studiekeuze
-                Begeleiding</h2>
+            <h2 id="fontHome" class="header center white-text">Studiekeuzebegeleiding</h2>
             <div class="row center">
-                <h5 id="fontHomeLow" class="header col s12 white-text light">Ontvang hulp van een ROC ter AA begeleider
+                <h5 id="fontHomeLow" class="header col s12 white-text light">Krijg hulp van een ROC Ter AA begeleider
                     met het zoeken voor een
                     opleiding/studie die bij jou past.</h5>
             </div>
