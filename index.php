@@ -29,7 +29,7 @@ session_start();
             <h2 id="fontHome" class="header center white-text">Studiekeuzebegeleiding</h2>
             <div class="row center">
                 <h5 id="fontHomeLow" class="header col s12 white-text light">Krijg hulp van een ROC Ter AA begeleider
-                    met het zoeken voor een
+                    met het zoeken naar een
                     opleiding/studie die bij jou past.</h5>
             </div>
             <div class="row center">
