@@ -85,7 +85,7 @@
                             <label for='password'>Enter your password</label>
                         </div>
                         <label style='float: right;'>
-                            <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+                            <a class='modal-trigger pink-text' href='#forgotPass'><b>Forgot Password?</b></a>
                         </label>
                     </div>
 
@@ -108,21 +108,20 @@
     <div class="section"></div>
 </main>
 
-<div id="modal1" class="modal">
+<!-- Modal Structure -->
+<div id="forgotPass" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4>Modal Header</h4>
         <p>A bunch of text</p>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
     </div>
 </div>
 
 </body>
 
 </html>
-
-</body>
 
 <?php
 $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
