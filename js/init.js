@@ -36,6 +36,10 @@ function emailBestaat() {
     swal("Email bestaat al!", "Al een account? Probeer in te loggen", "error");
 }
 
+function notFound() {
+    swal("Niks gevonden", "Heeft u het goed opgeschreven?", "error");
+}
+
 $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
