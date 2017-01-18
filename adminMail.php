@@ -52,7 +52,7 @@ if (isset($_SESSION['user'])) {
                             echo '<li><a href="student">Student</a></li>';
                             break;
                         case "1":
-                            echo '<li><a href="begeleider">Begeleider</a></li>';
+                            echo '<li><a href="adminList">Admin Pagina</a></li>';
                             break;
                         default:
                             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
