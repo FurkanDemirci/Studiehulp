@@ -40,7 +40,7 @@ if ($hash == 0) {
             header("Location: ../student");
             break;
         case "1":
-            header("Location: ../begeleider");
+            header("Location: ../adminList");
             break;
         default:
             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';

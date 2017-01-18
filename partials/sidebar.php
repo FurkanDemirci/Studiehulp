@@ -10,7 +10,7 @@
                             echo '<li><a href="student">Student</a></li>';
                             break;
                         case "1":
-                            echo '<li><a href="begeleider">Begeleider</a></li>';
+                            echo '<li><a href="adminList">Admin Pagina</a></li>';
                             break;
                         default:
                             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';
@@ -63,7 +63,7 @@
                             echo '<li><a class="waves-effect" href="student"><i class="material-icons">subject</i>Student</a></li>';
                             break;
                         case "1":
-                            echo '<li><a class="waves-effect" href="begeleider"><i class="material-icons">assignment</i>Begeleider</a></li>';
+                            echo '<li><a class="waves-effect" href="adminList"><i class="material-icons">assignment</i>Admin Pagina</a></li>';
                             break;
                         default:
                             echo '<h1>SOMETHING IS NOT QUITE RIGHT</h1>';

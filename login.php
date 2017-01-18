@@ -109,10 +109,10 @@
 </main>
 
 <!-- Modal Structure -->
-<div id="forgotPass" class="modal modal-fixed-footer">
+<div id="forgotPass" class="modal">
     <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4>Wachtwoord vergeten?</h4>
+        <p>Geen probleem! Vraag aan uw begeleider</p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>

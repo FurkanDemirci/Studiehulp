@@ -14,7 +14,7 @@ $sql->execute();
 $result = $sql->get_result();
 
 if (!$row = mysqli_fetch_assoc($result)) {
-    header("Location: ../begeleider?not=found");
+    header("Location: ../adminMail?not=found");
 } else {
     $_SESSION['student'] = $row;
     $sql = 'SELECT * FROM preference WHERE id_preference="' . $row['fk_preference'] . '"';
@@ -25,6 +25,6 @@ if (!$row = mysqli_fetch_assoc($result)) {
         echo "Probleem bij het laden...";
     }
 
-    header("Location: ../gegevens");
+    header("Location: ../adminPref");
 }
 ?>

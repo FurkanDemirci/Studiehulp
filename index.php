@@ -40,7 +40,7 @@ session_start();
                             echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="student">Naar Student</a>';
                             break;
                         case "1":
-                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="begeleider">Naar Begeleider</a>';
+                            echo '<a class="btn-large hoverable waves-effect waves-light teal darken-4" href="adminList">Admin pagina</a>';
                             break;
                         default:
                             echo "SOMETHING'S NOT QUITE RIGHT";
