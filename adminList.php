@@ -150,5 +150,13 @@ if (isset($_SESSION['user'])) {
 <!-- Footer -->
 <?php require 'partials/footer.php'; ?>
 
+<?php
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if (strpos($url, 'acc=del') !== false) {
+    echo '<script>deleted();</script>';
+    unset($_SESSION['student']);
+}
+?>
+
 </body>
 </html>

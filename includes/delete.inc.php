@@ -4,15 +4,21 @@ session_start();
 include 'dbcon.inc.php';
 
 $id = $_SESSION['student']['id_users'];
+$fkId = $_SESSION['student']['fk_preference'];
 
 $sql = "DELETE FROM users WHERE id_users=$id";
-$result = mysqli_query($conn, $sql);
 
-if (!$row = mysqli_fetch_assoc($result)) {
-    echo '<script type="text/javascript">alert("Gelukt!");
-          window.location.replace("../begeleider");</script>';
+if (mysqli_query($conn, $sql)) {
+    $sql = "DELETE FROM preference WHERE id_preference=$fkId";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: ../adminList?acc=del");
+    } else {
+        echo "Error deleting record: " . mysqli_error($conn);
+    }
 } else {
-    echo "wel gelukt";
+    echo "Error deleting record: " . mysqli_error($conn);
 }
 
-session_destroy();
+
+
+

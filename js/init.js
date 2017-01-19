@@ -59,6 +59,37 @@ function notFound() {
     swal("Niks gevonden", "Heeft u het goed opgeschreven?", "error");
 }
 
+function deleteData() {
+    swal({
+            title: "Wilt u het zeker verwijderen?",
+            text: "Gegevens die verloren zijn kunnen niet terug gevonden worden!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Ja, verwijder",
+            cancelButtonText: "Nee, annuleer",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+        function(isConfirm){
+            if (isConfirm) {
+                location.replace("includes/delete.inc.php");
+            } else {
+                swal("Annuleerd", "Niks is verwijderd", "error");
+            }
+        });
+}
+
+function deleted() {
+    swal({
+        title: "Verwijderd!",
+        type: "success",
+        timer: 1000,
+        showConfirmButton: false
+    });
+    setTimeout(function(){ window.location.replace("adminList"); }, 1000);
+}
+
 $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();

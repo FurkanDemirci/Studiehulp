@@ -177,8 +177,8 @@ if (!isset($_SESSION['student'])) {
         <a class="dropdown-button waves-effect waves-light btn red darken-4" href="#" data-activates="dropdown1">Andere student</a>
 
         <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="adminMail">Specifiek op email</a></li>
             <li><a href="adminList">Selecteren uit lijst</a></li>
+            <li><a href="adminMail">Specifiek op email</a></li>
         </ul>
 
     </div>
@@ -188,7 +188,7 @@ if (!isset($_SESSION['student'])) {
             <i class="large material-icons">mode_edit</i>
         </a>
         <ul>
-            <li><a href="includes/delete.inc.php" class="btn-floating green"><i class="material-icons">delete</i></a>
+            <li><a onclick="deleteData();" href="#" class="btn-floating green"><i class="material-icons">delete</i></a>
             </li>
             <li><a class="btn-floating blue"><i class="material-icons">email</i></a></li>
         </ul>

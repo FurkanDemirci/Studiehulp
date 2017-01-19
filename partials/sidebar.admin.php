@@ -1,7 +1,7 @@
 <div class="navbar">
     <nav class="teal darken-4" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="../studiehulp"
-                                              class="brand-logo"><b>Admin</b></a>
+                                              class="brand-logo"><b>Begeleider</b></a>
             <ul class="right hide-on-med-and-down">
                 <?php
                 if (isset($_SESSION['user'])) {
