@@ -122,22 +122,21 @@ if (isset($_SESSION['user'])) {
 
                 <tbody>
                 <?php
-                if (mysqli_num_rows($result) > 0) {
-                    // output data of each row
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $firstname = $row['firstname'];
-                        $lastname = $row['lastname'];
-                        $email = $row['email'];
-
-
-                        echo "<tr>";
-                        echo "<td>" . $row['firstname'];
-                        echo " " . $row['lastname'] . "</td>";
-                        echo "<td>" . $row['email'] . "</td>";
-                        echo "</tr>";
-                    }
-                } else {
-                    echo "0 results";
+                $x = 1;
+                foreach ($result as $key => $value) {
+                    echo "<tr>";
+                    echo "<td>" . $value['firstname'];
+                    echo " " . $value['lastname'] . "</td>";
+                    echo "<td>" . $value['email'] . "</td>";
+                    echo "
+                    
+                    <form action='includes/accounts.inc.php' method='GET'>
+                    <input value='" . $value['fk_preference'] . "' name='id' style='display:none'/>
+                    <td><button type='submit' class='waves-effect waves-circle waves-light btn-floating teal darken-4 modal-trigger'><i class='material-icons'>toc</i></button></td>
+                    </form>
+                    ";
+                    echo "</tr>";
+                    $x++;
                 }
                 ?>
                 </tbody>

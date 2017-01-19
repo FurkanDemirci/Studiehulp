@@ -174,7 +174,13 @@ if (!isset($_SESSION['student'])) {
         <div class="col s12 m2"></div>
     </div>
     <div class="row center">
-        <a class="waves-effect waves-light btn red darken-4" href="adminMail">Andere student</a>
+        <a class="dropdown-button waves-effect waves-light btn red darken-4" href="#" data-activates="dropdown1">Andere student</a>
+
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="adminMail">Specifiek op email</a></li>
+            <li><a href="adminList">Selecteren uit lijst</a></li>
+        </ul>
+
     </div>
 
     <div class="fixed-action-btn click-to-toggle">
