@@ -1,4 +1,4 @@
-# Studiekeuze
+**# Studiekeuze**
 Proftaak project voor ROC Ter AA
 
 # What is the goal of the website?
