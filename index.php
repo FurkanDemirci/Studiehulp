@@ -79,8 +79,7 @@ session_start();
 
                 <p id="indexText" class="light center">Bewerk je preferenties over de 6 categorieën. Zodra de data
                     opgeslagen is,
-                    kan een begeleider de preferenties bekijken en aan de hand van de informatie een afspraak in
-                    plannen.</p>
+                    kan een begeleider de preferenties bekijken en aan de hand van de informatie een afspraak maken.</p>
             </div>
         </div>
 

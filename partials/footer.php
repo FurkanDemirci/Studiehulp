@@ -4,9 +4,7 @@
             <div class="col l6 s12">
                 <h5 class="white-text">Over ons:</h5>
                 <p class="grey-text text-lighten-4">
-                    Wij zijn studenten van het Roc Ter AA applicatie ontwikkelaar. We hebben aan deze opdracht gewerkt
-                    als proftaak.
-                    Ontwikkelaars: Furkan Demirci en Yaime van der Vleuten.
+                    Ontwikkeld door Furkan Demirci & Yaime van der Vleuten.
                 </p>
                 <img class="brandlogo" src="img/brandlogo.png">
             </div>
