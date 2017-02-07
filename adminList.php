@@ -122,6 +122,8 @@ if (isset($_SESSION['user'])) {
 
                 <tbody>
                 <?php
+                //VALUE CHANGE VAN STUDENT NAAR ADMIN
+
                 $x = 1;
                 foreach ($result as $key => $value) {
                     echo "<tr>";
