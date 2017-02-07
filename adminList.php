@@ -123,6 +123,7 @@ if (isset($_SESSION['user'])) {
                 <tbody>
                 <?php
                 //VALUE CHANGE VAN STUDENT NAAR ADMIN
+                //mysqli_query("UPDATE users SET type = 1 WHERE id_users = 'hier moet dan het id'");
 
                 $x = 1;
                 foreach ($result as $key => $value) {
